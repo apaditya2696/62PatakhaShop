@@ -5,77 +5,38 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Terms & Conditions - Jaipur Fireworks</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #ffffff; color: #0a0a0a; padding-bottom: 40px; }
+    /* Responsive base styling shared across pages */
+    html, body { margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #fff; color: #0a0a0a; padding-bottom: 40px; }
 
     /* Navbar */
-    nav {
-      background: #FFD800;
-      color: #333;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 50px;
-    }
-
-    nav .logo {
-      font-size: 20px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: red;
-    }
+    nav { background: #FFD800; display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; gap: 8px; flex-wrap: wrap; }
+    nav .logo { font-size: 20px; font-weight: bold; display: flex; align-items: center; gap: 10px; color: red; }
     nav .logo img { width: 36px; height: 36px; object-fit: cover; border-radius: 6px; }
-    nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
-    nav ul li { margin-left: 20px; }
-    nav ul li a { text-decoration: none; color: red; font-size: 16px; }
+    nav ul { list-style: none; display: flex; margin: 0; padding: 0; gap: 14px; flex-wrap: wrap; }
+    nav a { color: red; text-decoration: none; }
 
-    /* Page content */
-    .terms-body { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
-    .terms-body header { margin-bottom: 20px; }
+    /* Page body */
+    .terms-body { max-width: 1000px; margin: 28px auto; padding: 0 20px; }
+    .terms-body header { margin-bottom: 16px; }
 
     /* Footer */
-    .site-footer { background: #FFD800; padding: 32px 0 48px 0; border-top: 1px solid rgba(0,0,0,0.06); color: #333; }
-    .site-footer .footer-inner {
-      max-width: 1200px;
-      margin: 0 50px;
-      display: flex;
-      gap: 30px;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-    .site-footer h3 {
-      margin: 0 0 12px 0;
-      font-size: 18px;
-    }
-    .site-footer .links ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .site-footer .links ul li {
-      margin-bottom: 8px;
-    }
-    .site-footer a {
-      color: red;
-      text-decoration: none;
-    }
-    .footer-col.contact-col {
-      max-width: 480px;
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-    .footer-logo img {
-      width: 64px;
-      height: 64px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+    .site-footer { background: #FFD800; padding: 28px 0; border-top: 1px solid rgba(0,0,0,0.06); color: #333; }
+    .site-footer .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; gap: 30px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+    .site-footer h3 { margin: 0 0 12px 0; font-size: 18px; }
+    .site-footer .links ul { list-style: none; padding: 0; margin: 0; }
+    .site-footer .links ul li { margin-bottom: 8px; }
+    .site-footer a { color: red; text-decoration: none; }
     .footer-details p { margin: 6px 0; font-size: 15px; }
     .footer-divider { border: 0; height: 1px; background: rgba(0,0,0,0.06); margin: 0; }
     .copyright-bar { background: #FFD800; text-align: center; padding: 14px 0; color: #333; }
-    .copyright-bar p { margin: 0; font-size: 14px; }
+
+    @media (max-width: 768px) {
+      nav ul { justify-content: center; width: 100%; }
+      .terms-body { margin: 20px auto; padding: 0 16px; }
+      .site-footer .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+    }
   </style>
 </head>
 <body>

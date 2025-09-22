@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Landing Page</title>
   <style>
+    /* Reset / base */
+    html,body { margin: 0; padding: 0; }
+    *,*::before,*::after { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #ffffff;
       color: #0a0a0a;
       padding-bottom: 40px;
-      border-top: 1px solid rgba(0,0,0,0.06);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
+
+    /* Layout container used across pages */
+    .content-inner { max-width: 1200px; margin: 0 50px; padding: 0 0; }
 
     /* Navbar */
     nav {
@@ -21,168 +28,72 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 15px 50px;
+      padding: 14px 24px;
+      gap: 12px;
+      flex-wrap: wrap;
     }
+    nav .logo { font-size: 20px; font-weight: bold; display: flex; align-items: center; gap: 10px; color: red; }
+    nav .logo img { width: 36px; height: 36px; object-fit: cover; border-radius: 6px; }
+    nav ul { list-style: none; display: flex; margin: 0; padding: 0; gap: 16px; flex-wrap: wrap; }
+    nav ul li { margin: 0; }
+    nav a { text-decoration: none; color: red; font-size: 16px; }
 
-    nav .logo {
-      font-size: 20px;
-      font-weight: bold;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: red;
-    }
-    nav .logo img {
-      width: 36px;
-      height: 36px;
-      object-fit: cover;
-      border-radius: 6px;
-    }
+    /* Hero */
+    .hero { display: flex; gap: 28px; align-items: center; padding: 40px 24px; flex-wrap: wrap; }
+    .hero-text { flex: 1 1 320px; min-width: 280px; }
+    .hero-text h1 { font-size: 40px; margin-bottom: 16px; line-height: 1.08; }
+    .hero-text p { font-size: 18px; margin-bottom: 12px; }
+    .hero .hero-img { flex: 0 0 400px; }
+    .hero .hero-img img { width: 100%; height: auto; border-radius: 10px; display: block; }
+    .hero .btn { background: #8dc63f; color: white; padding: 12px 22px; border-radius: 6px; display: inline-block; text-decoration: none; }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
+    /* Generic content sections */
+    .page-body, .contact-wrap, .privacy-center, .terms-body { max-width: 1000px; margin: 32px auto; padding: 0 20px; }
+    .contact .container { max-width: 1200px; margin: 0 50px; padding: 28px 32px; color: #333; }
 
-    nav ul li {
-      margin-left: 20px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: red;
-      font-size: 16px;
-    }
-
-    /* Hero Section */
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 50px;
-    }
-
-    .hero-text {
-      max-width: 50%;
-    }
-
-    .hero-text h1 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-
-    .hero-text p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .hero-text .btn {
-      background: #8dc63f;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .hero img {
-      max-width: 400px;
-      border-radius: 10px;
-    }
-
-    /* Responsive */
-    @media(max-width: 768px) {
-      .hero {
-        flex-direction: column;
-        text-align: center;
-      }
-      .hero-text {
-        max-width: 100%;
-      }
-      .hero img {
-        margin-top: 20px;
-        max-width: 100%;
-      }
-    }
-    /* Contact / Footer (styling moved to body) */
-    /* make the grey box span the page width but align with other content (50px side padding)
-       the inner container holds the content and the grey background */
-    .contact .container {
-      max-width: 1200px;
-      margin: 0 50px;
-      padding: 28px 32px;
-      text-align: left;
-      display: block;
-      color: #333;
-      background: transparent;
-    }
-    .contact h2 {
-      margin: 0 0 10px 0;
-      font-size: 22px;
-      color: #333;
-    }
-    .contact p {
-      margin: 6px 0;
-      color: #333;
-      font-size: 16px;
-    }
-    /* Footer styles */
-    .site-footer {
-      background: #FFD800;
-      padding: 32px 0 48px 0;
-      border-top: 1px solid rgba(0,0,0,0.06);
-      color: #333;
-    }
-    .site-footer .footer-inner {
-      max-width: 1200px;
-      margin: 0 50px;
-      display: flex;
-      gap: 30px;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-    .site-footer h3 {
-      margin: 0 0 12px 0;
-      font-size: 18px;
-    }
-    .site-footer .links ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .site-footer .links ul li {
-      margin-bottom: 8px;
-    }
-    .site-footer a {
-      color: red;
-      text-decoration: none;
-    }
-    .footer-col.contact-col {
-      max-width: 480px;
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-    .footer-logo img {
-      width: 64px;
-      height: 64px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
+    /* Footer */
+    .site-footer { background: #FFD800; padding: 32px 0; border-top: 1px solid rgba(0,0,0,0.06); color: #333; }
+    .site-footer .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; gap: 30px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+    .site-footer h3 { margin: 0 0 12px 0; font-size: 18px; }
+    .site-footer .links ul { list-style: none; padding: 0; margin: 0; }
+    .site-footer .links ul li { margin-bottom: 8px; }
+    .site-footer a { color: red; text-decoration: none; }
+    .footer-col.contact-col { max-width: 480px; display: flex; gap: 16px; align-items: flex-start; }
     .footer-details p { margin: 6px 0; font-size: 15px; }
-
-    @media (max-width: 768px) {
-      .site-footer .footer-inner { flex-direction: column; margin: 0 20px; }
-      .footer-col.contact-col { align-items: center; }
-      .footer-details { text-align: center; }
-    }
+    .footer-logo img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; }
     .footer-divider { border: 0; height: 1px; background: rgba(0,0,0,0.06); margin: 0; }
     .copyright-bar { background: #FFD800; text-align: center; padding: 14px 0; color: #333; }
-    .copyright-bar p { margin: 0; font-size: 14px; }
+
+    /* Forms */
+    form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    form > div { display: flex; flex-direction: column; }
+    label { font-weight: 600; margin-bottom: 6px; }
+    input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    textarea { min-height: 120px; resize: vertical; }
+    .btn { background: #8dc63f; color: #fff; padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; }
+
+    /* Responsive breakpoints */
+    @media (max-width: 900px) {
+      .hero-text h1 { font-size: 34px; }
+      .hero .hero-img { flex-basis: 320px; }
+      .content-inner { margin: 0 30px; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 12px 16px; }
+      nav ul { justify-content: center; width: 100%; }
+      .hero { flex-direction: column; text-align: center; }
+      .hero .hero-img { width: 100%; max-width: 540px; }
+      .page-body, .contact-wrap, .privacy-center, .terms-body { margin: 20px auto; padding: 0 16px; }
+      form { grid-template-columns: 1fr; }
+      .site-footer .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+      .footer-col.contact-col { align-items: center; }
+    }
+    @media (max-width: 480px) {
+      nav .logo img { width: 28px; height: 28px; }
+      .hero-text h1 { font-size: 26px; }
+      nav a { font-size: 15px; }
+      .content-inner { margin: 0 12px; }
+    }
   </style>
 </head>
 <body>

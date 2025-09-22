@@ -5,76 +5,53 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact Us - 62 Patakha Shop</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background: #ffffff; color: #0a0a0a; padding-bottom: 40px; }
-    nav { background: #FFD800; color: #333; display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; }
+    /* Shared responsive CSS */
+    html, body { margin: 0; padding: 0; }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #fff; color: #0a0a0a; padding-bottom: 40px; }
+
+    nav { background: #FFD800; display: flex; justify-content: space-between; align-items: center; padding: 12px 18px; gap: 8px; flex-wrap: wrap; }
     nav .logo { font-size: 20px; font-weight: bold; display: flex; align-items: center; gap: 10px; color: red; }
     nav .logo img { width: 36px; height: 36px; object-fit: cover; border-radius: 6px; }
-    nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
-    nav ul li { margin-left: 20px; }
-    nav ul li a { text-decoration: none; color: red; font-size: 16px; }
-    .contact-wrap { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    form { display: grid; gap: 12px; }
-    label { font-weight: 600; }
-    input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
-    textarea { min-height: 120px; resize: vertical; }
-  .btn { background: #8dc63f; color: #fff; padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; transition: background-color 150ms ease, opacity 150ms ease; }
-  .btn:disabled { background: #c0c0c0; color: #666; cursor: not-allowed; opacity: 0.9; }
-    .site-footer { background: #FFD800; padding: 32px 0 48px 0; border-top: 1px solid rgba(0,0,0,0.06); color: #333; }
-    .site-footer .footer-inner {
-      max-width: 1200px;
-      margin: 0 50px;
-      display: flex;
-      gap: 30px;
-      align-items: flex-start;
-      justify-content: space-between;
-    }
-    .site-footer h3 {
-      margin: 0 0 12px 0;
-      font-size: 18px;
-    }
-    .site-footer .links ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .site-footer .links ul li {
-      margin-bottom: 8px;
-    }
-    .site-footer a {
-      color: red;
-      text-decoration: none;
-    }
-    .footer-col.contact-col {
-      max-width: 480px;
-      display: flex;
-      gap: 16px;
-      align-items: flex-start;
-    }
-    .footer-logo img {
-      width: 64px;
-      height: 64px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .footer-details p { margin: 6px 0; font-size: 15px; }
+    nav ul { list-style: none; display: flex; margin: 0; padding: 0; gap: 14px; flex-wrap: wrap; }
+    nav a { color: red; text-decoration: none; }
 
-    @media (max-width: 768px) {
-      .site-footer .footer-inner { flex-direction: column; margin: 0 20px; }
-      .footer-col.contact-col { align-items: center; }
-      .footer-details { text-align: center; }
-    }
+    .contact-wrap { max-width: 900px; margin: 32px auto; padding: 0 20px; }
+    h1 { margin-top: 0; }
+    form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    form > div { display: flex; flex-direction: column; }
+    label { font-weight: 600; margin-bottom: 6px; }
+    input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    textarea { min-height: 120px; resize: vertical; grid-column: 1 / -1; }
+    .btn { background: #8dc63f; color: #fff; padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; }
+    .btn:disabled { background: #c0c0c0; color: #666; cursor: not-allowed; }
+
+    .site-footer { background: #FFD800; padding: 28px 0; border-top: 1px solid rgba(0,0,0,0.06); color: #333; }
+    .site-footer .footer-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; gap: 30px; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; }
+    .site-footer h3 { margin: 0 0 12px 0; font-size: 18px; }
+    .site-footer .links ul { list-style: none; padding: 0; margin: 0; }
+    .site-footer .links ul li { margin-bottom: 8px; }
+    .site-footer a { color: red; text-decoration: none; }
+    .footer-details p { margin: 6px 0; font-size: 15px; }
+    .footer-logo img { width: 64px; height: 64px; object-fit: cover; border-radius: 8px; }
     .footer-divider { border: 0; height: 1px; background: rgba(0,0,0,0.06); margin: 0; }
     .copyright-bar { background: #FFD800; text-align: center; padding: 14px 0; color: #333; }
+
+    @media (max-width: 768px) {
+      form { grid-template-columns: 1fr; }
+      nav ul { justify-content: center; width: 100%; }
+      .site-footer .footer-inner { flex-direction: column; align-items: center; text-align: center; }
+    }
   </style>
 </head>
 <body>
   <nav id="home">
-    <div class="logo"><img src="/Users/aditya.pandey/Desktop/62PatakhaShop/newlogo3.jpeg" alt="Logo">Patakha Shop</div>
+    <div class="logo"><img src="/Users/aditya.pandey/Desktop/62PatakhaShop/newlogo3.jpeg" alt="Logo">62 Patakha Shop</div>
     <ul>
-  <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Index.html#home">Home</a></li>
+      <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Index.html#home">Home</a></li>
       <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/terms.html">Terms and Conditions</a></li>
       <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Contact.html">Contact Us</a></li>
-      <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Poilicy</a></li>
+      <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Policy</a></li>
     </ul>
   </nav>
 
@@ -97,11 +74,11 @@
         <label for="requirement">Requirement</label>
         <textarea id="requirement" name="requirement" placeholder="Tell us about your requirement" required></textarea>
       </div>
-      <label>
+      <label style="grid-column: 1 / -1;">
           <input type="checkbox" id="privacyConsent" required />
           By submitting this form, you agree to the <a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Policy</a>. Also, you hereby grant us permission to contact you via SMS, WhatsApp, RCS, Email, and any other channel.
         </label>
-      <div>
+      <div style="grid-column: 1 / -1; text-align: left;">
         <button id="sendBtn" class="btn" type="submit" disabled>Send</button>
       </div>
     </form>
@@ -115,11 +92,10 @@
           <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Index.html#home">Home</a></li>
           <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/terms.html">Terms and Conditions</a></li>
           <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Contact.html">Contact Us</a></li>
-          <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Poilicy</a></li>
+          <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Policy</a></li>
         </ul>
       </div>
       <div class="footer-col contact-col">
-
         <div class="footer-details">
           <p><strong>Office address:</strong> 62, Hawa Mahal Bazar, Jaipur, Rajasthan 302002</p>
           <p><strong>Phone:</strong> +91-8561005357 / +91-9414361426</p>
@@ -151,7 +127,6 @@
       }
       alert('Form submitted (local demo). Data: ' + JSON.stringify(data));
       form.reset();
-      // After reset, disable send button until consent re-checked
       const sendBtn = document.getElementById('sendBtn');
       if (sendBtn) sendBtn.disabled = true;
     }
@@ -161,12 +136,10 @@
       const sendBtn = document.getElementById('sendBtn');
       const form = document.getElementById('contactForm');
       if (!privacy || !sendBtn || !form) return;
-      // Ensure Send is disabled until checked
       sendBtn.disabled = !privacy.checked;
       privacy.addEventListener('change', function () {
         sendBtn.disabled = !privacy.checked;
       });
-      // If the form is reset by any other means, re-disable the button
       form.addEventListener('reset', function () {
         sendBtn.disabled = true;
       });
