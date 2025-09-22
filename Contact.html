@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us - 62 Patakha Shop</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #ffffff; color: #0a0a0a; padding-bottom: 40px; }
+    nav { background: #FFD800; color: #333; display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; }
+    nav .logo { font-size: 20px; font-weight: bold; display: flex; align-items: center; gap: 10px; color: red; }
+    nav .logo img { width: 36px; height: 36px; object-fit: cover; border-radius: 6px; }
+    nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+    nav ul li { margin-left: 20px; }
+    nav ul li a { text-decoration: none; color: red; font-size: 16px; }
+    .contact-wrap { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    form { display: grid; gap: 12px; }
+    label { font-weight: 600; }
+    input[type="text"], input[type="email"], textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 6px; }
+    textarea { min-height: 120px; resize: vertical; }
+  .btn { background: #8dc63f; color: #fff; padding: 10px 16px; border: none; border-radius: 6px; cursor: pointer; transition: background-color 150ms ease, opacity 150ms ease; }
+  .btn:disabled { background: #c0c0c0; color: #666; cursor: not-allowed; opacity: 0.9; }
+    .site-footer { background: #FFD800; padding: 32px 0 48px 0; border-top: 1px solid rgba(0,0,0,0.06); color: #333; }
+    .site-footer .footer-inner {
+      max-width: 1200px;
+      margin: 0 50px;
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .site-footer h3 {
+      margin: 0 0 12px 0;
+      font-size: 18px;
+    }
+    .site-footer .links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .site-footer .links ul li {
+      margin-bottom: 8px;
+    }
+    .site-footer a {
+      color: red;
+      text-decoration: none;
+    }
+    .footer-col.contact-col {
+      max-width: 480px;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .footer-logo img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .footer-details p { margin: 6px 0; font-size: 15px; }
+
+    @media (max-width: 768px) {
+      .site-footer .footer-inner { flex-direction: column; margin: 0 20px; }
+      .footer-col.contact-col { align-items: center; }
+      .footer-details { text-align: center; }
+    }
+    .footer-divider { border: 0; height: 1px; background: rgba(0,0,0,0.06); margin: 0; }
+    .copyright-bar { background: #FFD800; text-align: center; padding: 14px 0; color: #333; }
+  </style>
+</head>
+<body>
+  <nav id="home">
+    <div class="logo"><img src="/Users/aditya.pandey/Desktop/62PatakhaShop/newlogo3.jpeg" alt="Logo">Patakha Shop</div>
+    <ul>
+      <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Code2.html#home">Home</a></li>
+      <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/terms.html">Terms and Conditions</a></li>
+      <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Contact.html">Contact Us</a></li>
+      <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Poilicy</a></li>
+    </ul>
+  </nav>
+
+  <div class="contact-wrap">
+    <h1>Contact Us</h1>
+    <form id="contactForm" onsubmit="handleSubmit(event)">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required />
+      </div>
+      <div>
+        <label for="email">Email ID</label>
+        <input id="email" name="email" type="email" required />
+      </div>
+      <div>
+        <label for="mobile">Mobile Number</label>
+        <input id="mobile" name="mobile" type="text" pattern="[0-9+\- ]{7,15}" required />
+      </div>
+      <div>
+        <label for="requirement">Requirement</label>
+        <textarea id="requirement" name="requirement" placeholder="Tell us about your requirement" required></textarea>
+      </div>
+      <label>
+          <input type="checkbox" id="privacyConsent" required />
+          By submitting this form, you agree to the <a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Policy</a>. Also, you hereby grant us permission to contact you via SMS, WhatsApp, RCS, Email, and any other channel.
+        </label>
+      <div>
+        <button id="sendBtn" class="btn" type="submit" disabled>Send</button>
+      </div>
+    </form>
+  </div>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="footer-inner">
+      <div class="footer-col links">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Code2.html#home">Home</a></li>
+          <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/terms.html">Terms and Conditions</a></li>
+          <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Contact.html">Contact Us</a></li>
+          <li><a href="/Users/aditya.pandey/Desktop/62PatakhaShop/Privacy.html">Privacy Poilicy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col contact-col">
+
+        <div class="footer-details">
+          <p><strong>Office address:</strong> 62, Hawa Mahal Bazar, Jaipur, Rajasthan 302002</p>
+          <p><strong>Phone:</strong> +91-8561005357 / +91-9414361426</p>
+          <p><strong>Email:</strong> vagarwal3005@gmail.com</p>
+          <p><strong>Open:</strong> Mon - Sun / 9:00 AM - 10:00 PM IST</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <hr class="footer-divider" />
+  <div class="copyright-bar">
+    <p>© 2025 by 62 Patakha Shop All Rights Reserved.</p>
+  </div>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('contactForm');
+      const data = {
+        name: form.name.value.trim(),
+        email: form.email.value.trim(),
+        mobile: form.mobile.value.trim(),
+        requirement: form.requirement.value.trim()
+      };
+      if (!data.name || !data.email || !data.mobile || !data.requirement) {
+        alert('Please fill all fields.');
+        return;
+      }
+      alert('Form submitted (local demo). Data: ' + JSON.stringify(data));
+      form.reset();
+      // After reset, disable send button until consent re-checked
+      const sendBtn = document.getElementById('sendBtn');
+      if (sendBtn) sendBtn.disabled = true;
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const privacy = document.getElementById('privacyConsent');
+      const sendBtn = document.getElementById('sendBtn');
+      const form = document.getElementById('contactForm');
+      if (!privacy || !sendBtn || !form) return;
+      // Ensure Send is disabled until checked
+      sendBtn.disabled = !privacy.checked;
+      privacy.addEventListener('change', function () {
+        sendBtn.disabled = !privacy.checked;
+      });
+      // If the form is reset by any other means, re-disable the button
+      form.addEventListener('reset', function () {
+        sendBtn.disabled = true;
+      });
+    });
+  </script>
+</body>
+</html>
