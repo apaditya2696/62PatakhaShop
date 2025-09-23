@@ -57,7 +57,7 @@
 
   <div class="contact-wrap">
     <h1>Contact Us</h1>
-    <form id="contactForm" onsubmit="handleSubmit(event)">
+    <!-- <form id="contactForm" onsubmit="handleSubmit(event)">
       <div>
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required />
@@ -81,7 +81,8 @@
       <div style="grid-column: 1 / -1; text-align: left;">
         <button id="sendBtn" class="btn" type="submit" disabled>Send</button>
       </div>
-    </form>
+    </form> -->
+   <script src="https://sheetdb.io/s/f/4kvdi94g9qpk5.js"></script>
   </div>
 
   <footer class="site-footer" aria-label="Footer">
@@ -112,38 +113,80 @@
   </div>
 
   <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      const form = document.getElementById('contactForm');
-      const data = {
-        name: form.name.value.trim(),
-        email: form.email.value.trim(),
-        mobile: form.mobile.value.trim(),
-        requirement: form.requirement.value.trim()
-      };
-      if (!data.name || !data.email || !data.mobile || !data.requirement) {
-        alert('Please fill all fields.');
-        return;
-      }
-      alert('Form submitted (local demo). Data: ' + JSON.stringify(data));
-      form.reset();
-      const sendBtn = document.getElementById('sendBtn');
-      if (sendBtn) sendBtn.disabled = true;
-    }
+    (function () {
+      // Paste your deployed Google Apps Script Web App URL here.
+      // Example: const WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbx.../exec';
+      const WEB_APP_URL = '';
 
-    document.addEventListener('DOMContentLoaded', function () {
-      const privacy = document.getElementById('privacyConsent');
-      const sendBtn = document.getElementById('sendBtn');
-      const form = document.getElementById('contactForm');
-      if (!privacy || !sendBtn || !form) return;
-      sendBtn.disabled = !privacy.checked;
-      privacy.addEventListener('change', function () {
+      async function postToSheet(data) {
+        if (!WEB_APP_URL) {
+          // No URL provided — fallback to local demo behaviour
+          return { ok: false, message: 'WEB_APP_URL not set. Running demo fallback.' };
+        }
+        try {
+          const resp = await fetch(WEB_APP_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          });
+          const json = await resp.json();
+          return { ok: resp.ok, json };
+        } catch (err) {
+          return { ok: false, message: err.message };
+        }
+      }
+
+      window.handleSubmit = async function (e) {
+        e.preventDefault();
+        const form = document.getElementById('contactForm');
+        const sendBtn = document.getElementById('sendBtn');
+        const data = {
+          name: form.name.value.trim(),
+          email: form.email.value.trim(),
+          mobile: form.mobile.value.trim(),
+          requirement: form.requirement.value.trim()
+        };
+        if (!data.name || !data.email || !data.mobile || !data.requirement) {
+          alert('Please fill all fields.');
+          return;
+        }
+
+        // Disable button while submitting
+        if (sendBtn) { sendBtn.disabled = true; sendBtn.textContent = 'Sending...'; }
+
+        const result = await postToSheet(data);
+
+        if (!WEB_APP_URL) {
+          alert('Demo mode: form data would be sent to Google Sheets.\n' + JSON.stringify(data));
+          form.reset();
+          if (sendBtn) sendBtn.disabled = true;
+          if (sendBtn) sendBtn.textContent = 'Send';
+          return;
+        }
+
+        if (result.ok) {
+          alert('Thanks — your message was saved.');
+          form.reset();
+        } else {
+          alert('Submission failed: ' + (result.message || JSON.stringify(result.json) || 'Unknown error'));
+        }
+        if (sendBtn) { sendBtn.disabled = true; sendBtn.textContent = 'Send'; }
+      };
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const privacy = document.getElementById('privacyConsent');
+        const sendBtn = document.getElementById('sendBtn');
+        const form = document.getElementById('contactForm');
+        if (!privacy || !sendBtn || !form) return;
         sendBtn.disabled = !privacy.checked;
+        privacy.addEventListener('change', function () {
+          sendBtn.disabled = !privacy.checked;
+        });
+        form.addEventListener('reset', function () {
+          sendBtn.disabled = true;
+        });
       });
-      form.addEventListener('reset', function () {
-        sendBtn.disabled = true;
-      });
-    });
+    })();
   </script>
 </body>
 </html>
