@@ -128,16 +128,19 @@
           return { ok: false, message: 'WEB_APP_URL not set. Running demo fallback.' };
         }
         try {
-          const resp = await fetch(WEB_APP_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-          });
-          const json = await resp.json();
-          return { ok: resp.ok, json };
-        } catch (err) {
-          return { ok: false, message: err.message };
-        }
+            // Use form-encoded payload to avoid CORS preflight in many environments
+            const params = new URLSearchParams();
+            Object.keys(data).forEach(k => { if (data[k] !== undefined) params.append(k, data[k]); });
+            const resp = await fetch(WEB_APP_URL, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: params.toString()
+            });
+            const json = await resp.json();
+            return { ok: resp.ok, json };
+          } catch (err) {
+            return { ok: false, message: err.message };
+          }
       }
 
       window.handleSubmit = async function (e) {
@@ -175,7 +178,10 @@
           alert('Thanks — your message was saved.');
           form.reset();
         } else {
-          alert('Submission failed: ' + (result.message || JSON.stringify(result.json) || 'Unknown error'));
+          // Provide more actionable error message for network failures
+          const msg = result.message || (result.json && result.json.message) || JSON.stringify(result.json) || 'Unknown error';
+          alert('Submission failed: ' + msg + '\n\nCommon causes: network blocked, CORS, or bad Web App URL. Open DevTools Console for details.');
+          console.error('Form submission error', result);
         }
         if (sendBtn) { sendBtn.disabled = true; sendBtn.textContent = 'Send'; }
       };
