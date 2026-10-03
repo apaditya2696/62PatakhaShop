@@ -1,0 +1,38 @@
+[
+  {
+    "id": "rev-1",
+    "productId": "22846",
+    "author": "Rajesh Sharma (Jaipur)",
+    "rating": 5,
+    "comment": "Spectacular bursts in the sky! Very bright colors and lasted for a good duration. Sivakasi quality is unmatched.",
+    "date": "2026-09-15",
+    "verified": true
+  },
+  {
+    "id": "rev-2",
+    "productId": "22846",
+    "author": "Vikram Singh",
+    "rating": 5,
+    "comment": "Ordered for our family anniversary celebration. Every shot fired reliably. Highly recommend 62 Patakha Shop.",
+    "date": "2026-09-20",
+    "verified": true
+  },
+  {
+    "id": "rev-3",
+    "productId": "22720",
+    "author": "Sunil Kothari",
+    "rating": 5,
+    "comment": "Loud crisp sound with safe distance fuse. Perfect for Diwali celebration!",
+    "date": "2026-09-18",
+    "verified": true
+  },
+  {
+    "id": "rev-4",
+    "productId": "22752",
+    "author": "Neha Agarwal",
+    "rating": 5,
+    "comment": "Sparklers burned for long and had very low smoke. Safe and joyful for kids.",
+    "date": "2026-09-22",
+    "verified": true
+  }
+]

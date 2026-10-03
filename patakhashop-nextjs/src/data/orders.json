@@ -1,0 +1,1641 @@
+[
+  {
+    "orderId": "ORD-261001-7191",
+    "customerName": "Benchmark Test 0",
+    "customerPhone": "9829012345",
+    "orderNote": "Baseline Latency Measurement",
+    "items": [
+      {
+        "id": "1270",
+        "name": "12 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 250,
+        "originalPrice": 900,
+        "quantity": 1,
+        "image": "/products/prod_7_1270.jpeg"
+      }
+    ],
+    "subtotal": 250,
+    "totalSavings": 650,
+    "totalCount": 1,
+    "deliveryMethod": "pickup",
+    "paymentMethod": "cash_on_pickup",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "confirmed",
+    "createdAt": "2026-10-01T07:34:15.411Z"
+  },
+  {
+    "orderId": "ORD-260930-4256",
+    "customerName": "namannaman",
+    "customerPhone": "3323525353",
+    "orderNote": "Counter / Walk-in Customer",
+    "items": [
+      {
+        "id": "22857",
+        "name": "DRAGON",
+        "brand": "Vanitha",
+        "price": 2700,
+        "originalPrice": 6400,
+        "quantity": 2,
+        "image": "/products/prod_84_22857.jpg"
+      },
+      {
+        "id": "1270",
+        "name": "12 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 250,
+        "originalPrice": 900,
+        "quantity": 1,
+        "image": "/products/prod_7_1270.jpeg"
+      },
+      {
+        "id": "22864",
+        "name": "Dark",
+        "brand": "Vanitha",
+        "price": 2700,
+        "originalPrice": 6500,
+        "quantity": 2,
+        "image": "/products/prod_80_22864.jpg"
+      },
+      {
+        "id": "16351",
+        "name": "Classic Green Bomb (Rajukanna)",
+        "brand": "Standard",
+        "price": 220,
+        "originalPrice": 549,
+        "quantity": 2,
+        "image": "/products/prod_72_16351.jpg"
+      },
+      {
+        "id": "300",
+        "name": "Jil Jil (10 Pc / Packet)",
+        "brand": "Cock",
+        "price": 70,
+        "originalPrice": 115,
+        "quantity": 1,
+        "image": "/products/prod_122_300.webp"
+      },
+      {
+        "id": "8900",
+        "name": "120 Shot (Mercury)",
+        "brand": "Mercury",
+        "price": 3000,
+        "originalPrice": 10600,
+        "quantity": 1,
+        "image": "/products/prod_8_8900.jpg"
+      }
+    ],
+    "subtotal": 14560,
+    "totalSavings": 23953,
+    "totalCount": 9,
+    "deliveryMethod": "pickup",
+    "paymentMethod": "cash_on_pickup",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "confirmed",
+    "createdAt": "2026-09-30T12:43:22.271Z"
+  },
+  {
+    "orderId": "ORD-260930-4645",
+    "customerName": "namanffsfsfs",
+    "customerPhone": "9881151255",
+    "orderNote": "Counter / Walk-in Customer",
+    "items": [
+      {
+        "id": "22864",
+        "name": "Dark",
+        "brand": "Vanitha",
+        "price": 2700,
+        "originalPrice": 6500,
+        "quantity": 1,
+        "image": "/products/prod_80_22864.jpg"
+      },
+      {
+        "id": "8812",
+        "name": "Bubble",
+        "brand": "Vanitha",
+        "price": 1050,
+        "originalPrice": 2100,
+        "quantity": 2,
+        "image": "/products/prod_65_8812.jpg"
+      },
+      {
+        "id": "22326",
+        "name": "3½” Mercury Flash",
+        "brand": "Sony",
+        "price": 1600,
+        "originalPrice": 3460,
+        "quantity": 2,
+        "image": "/products/prod_38_22326.png"
+      },
+      {
+        "id": "1270",
+        "name": "12 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 250,
+        "originalPrice": 900,
+        "quantity": 2,
+        "image": "/products/prod_7_1270.jpeg"
+      },
+      {
+        "id": "22857",
+        "name": "DRAGON",
+        "brand": "Vanitha",
+        "price": 2700,
+        "originalPrice": 6400,
+        "quantity": 1,
+        "image": "/products/prod_84_22857.jpg"
+      },
+      {
+        "id": "23092",
+        "name": "Lunik Express",
+        "brand": "Sunshine",
+        "price": 240,
+        "originalPrice": 578,
+        "quantity": 1,
+        "image": "/products/prod_131_23092.jpg"
+      },
+      {
+        "id": "22881",
+        "name": "Golden Sky",
+        "brand": "Vanitha",
+        "price": 2600,
+        "originalPrice": 4600,
+        "quantity": 1,
+        "image": "/products/prod_102_22881.jpg"
+      },
+      {
+        "id": "1241",
+        "name": "Nattya Dhara Spinner Special (Vanitha)",
+        "brand": "Vanitha",
+        "price": 450,
+        "originalPrice": 850,
+        "quantity": 1,
+        "image": "/products/prod_183_1241.jpeg"
+      },
+      {
+        "id": "23082",
+        "name": "Magic Show 200",
+        "brand": "Standard",
+        "price": 6200,
+        "originalPrice": 31200,
+        "quantity": 1,
+        "image": "/products/prod_134_23082.jpg"
+      },
+      {
+        "id": "525",
+        "name": "Action Replayy (100 Shot Multicolor)",
+        "brand": "Sunshine",
+        "price": 3200,
+        "originalPrice": 15600,
+        "quantity": 1,
+        "image": "/products/prod_52_525.png"
+      },
+      {
+        "id": "353",
+        "name": "Deluxe Flower Pot (5 Pc Per Box)",
+        "brand": "Azad",
+        "price": 240,
+        "originalPrice": 450,
+        "quantity": 1,
+        "image": "/products/prod_81_353.jpg"
+      }
+    ],
+    "subtotal": 24130,
+    "totalSavings": 54968,
+    "totalCount": 14,
+    "deliveryMethod": "pickup",
+    "paymentMethod": "cash_on_pickup",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "confirmed",
+    "createdAt": "2026-09-30T11:09:38.817Z"
+  },
+  {
+    "orderId": "ORD-260930-1001",
+    "customerName": "NAMAN",
+    "customerPhone": "934394242422",
+    "orderNote": "Counter / Walk-in Customer",
+    "items": [
+      {
+        "id": "596",
+        "name": "World War",
+        "brand": "Sony",
+        "price": 1900,
+        "originalPrice": 3525,
+        "quantity": 1,
+        "image": "/products/prod_205_596.png"
+      },
+      {
+        "id": "8812",
+        "name": "Bubble",
+        "brand": "Vanitha",
+        "price": 1050,
+        "originalPrice": 2100,
+        "quantity": 1,
+        "image": "/products/prod_65_8812.jpg"
+      },
+      {
+        "id": "300",
+        "name": "Jil Jil (10 Pc / Packet)",
+        "brand": "Cock",
+        "price": 70,
+        "originalPrice": 115,
+        "quantity": 1,
+        "image": "/products/prod_122_300.webp"
+      },
+      {
+        "id": "16351",
+        "name": "Classic Green Bomb (Rajukanna)",
+        "brand": "Standard",
+        "price": 220,
+        "originalPrice": 549,
+        "quantity": 1,
+        "image": "/products/prod_72_16351.jpg"
+      },
+      {
+        "id": "23077",
+        "name": "Ganga Jamuna",
+        "brand": "Sunshine",
+        "price": 140,
+        "originalPrice": 492,
+        "quantity": 1,
+        "image": "/products/prod_95_23077.jpg"
+      },
+      {
+        "id": "22857",
+        "name": "DRAGON",
+        "brand": "Vanitha",
+        "price": 2700,
+        "originalPrice": 6400,
+        "quantity": 1,
+        "image": "/products/prod_84_22857.jpg"
+      },
+      {
+        "id": "8900",
+        "name": "120 Shot (Mercury)",
+        "brand": "Mercury",
+        "price": 3000,
+        "originalPrice": 10600,
+        "quantity": 3,
+        "image": "/products/prod_8_8900.jpg"
+      },
+      {
+        "id": "1407",
+        "name": "The 5 Falls (5 Pc/Box)",
+        "brand": "Standard",
+        "price": 250,
+        "originalPrice": 800,
+        "quantity": 1,
+        "image": "/products/prod_189_1407.jpg"
+      },
+      {
+        "id": "22849",
+        "name": "Lotto",
+        "brand": "Vanitha",
+        "price": 540,
+        "originalPrice": 1000,
+        "quantity": 1,
+        "image": "/products/prod_130_22849.jpg"
+      },
+      {
+        "id": "23092",
+        "name": "Lunik Express",
+        "brand": "Sunshine",
+        "price": 240,
+        "originalPrice": 578,
+        "quantity": 1,
+        "image": "/products/prod_131_23092.jpg"
+      },
+      {
+        "id": "1241",
+        "name": "Nattya Dhara Spinner Special (Vanitha)",
+        "brand": "Vanitha",
+        "price": 450,
+        "originalPrice": 850,
+        "quantity": 1,
+        "image": "/products/prod_183_1241.jpeg"
+      },
+      {
+        "id": "23082",
+        "name": "Magic Show 200",
+        "brand": "Standard",
+        "price": 6200,
+        "originalPrice": 31200,
+        "quantity": 2,
+        "image": "/products/prod_134_23082.jpg"
+      },
+      {
+        "id": "648",
+        "name": "Siren (3 Pc Per Box) by Mercury",
+        "brand": "Mercury",
+        "price": 350,
+        "originalPrice": 1300,
+        "quantity": 1,
+        "image": "/products/prod_179_648.png"
+      }
+    ],
+    "subtotal": 29310,
+    "totalSavings": 82599,
+    "totalCount": 16,
+    "deliveryMethod": "pickup",
+    "paymentMethod": "cash_on_pickup",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "pending",
+    "createdAt": "2026-09-30T06:43:25.446Z"
+  },
+  {
+    "orderId": "ORD-260930-1002",
+    "customerName": "WDEW",
+    "customerPhone": "754754754754754754DFDSFDSFSDFSDF",
+    "orderNote": "Counter / Walk-in Customer",
+    "items": [
+      {
+        "id": "8900",
+        "name": "120 Shot (Mercury)",
+        "brand": "Mercury",
+        "price": 3000,
+        "originalPrice": 10600,
+        "quantity": 1,
+        "image": "/products/prod_8_8900.jpg"
+      },
+      {
+        "id": "22326",
+        "name": "3½” Mercury Flash",
+        "brand": "Sony",
+        "price": 1600,
+        "originalPrice": 3460,
+        "quantity": 1,
+        "image": "/products/prod_38_22326.png"
+      },
+      {
+        "id": "1241",
+        "name": "Nattya Dhara Spinner Special (Vanitha)",
+        "brand": "Vanitha",
+        "price": 450,
+        "originalPrice": 850,
+        "quantity": 1,
+        "image": "/products/prod_183_1241.jpeg"
+      },
+      {
+        "id": "23076",
+        "name": "Moon Drops (5 Pc Per Box)",
+        "brand": "Standard",
+        "price": 140,
+        "originalPrice": 660,
+        "quantity": 1,
+        "image": "/products/prod_143_23076.jpg"
+      },
+      {
+        "id": "790",
+        "name": "Pyro Dance (Butterfly) (10 Pc/Box)",
+        "brand": "Standard",
+        "price": 260,
+        "originalPrice": 1080,
+        "quantity": 1,
+        "image": "/products/prod_164_790.png"
+      }
+    ],
+    "subtotal": 5450,
+    "totalSavings": 11200,
+    "totalCount": 5,
+    "deliveryMethod": "pickup",
+    "paymentMethod": "cash_on_pickup",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "pending",
+    "createdAt": "2026-09-30T06:41:35.138Z"
+  },
+  {
+    "orderId": "ORD-260929-1003",
+    "customerName": "nss",
+    "customerPhone": "9685675754",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "22326",
+        "name": "3½” Mercury Flash",
+        "brand": "Sony",
+        "price": 1600,
+        "originalPrice": 3460,
+        "quantity": 4,
+        "image": "/products/prod_38_22326.png"
+      },
+      {
+        "id": "8900",
+        "name": "120 Shot (Mercury)",
+        "brand": "Mercury",
+        "price": 3000,
+        "originalPrice": 10600,
+        "quantity": 1,
+        "image": "/products/prod_8_8900.jpg"
+      },
+      {
+        "id": "1270",
+        "name": "12 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 250,
+        "originalPrice": 900,
+        "quantity": 1,
+        "image": "/products/prod_7_1270.jpeg"
+      },
+      {
+        "id": "1264",
+        "name": "60 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 1700,
+        "originalPrice": 6250,
+        "quantity": 1,
+        "image": "/products/prod_49_1264.jpeg"
+      }
+    ],
+    "subtotal": 11350,
+    "totalSavings": 20240,
+    "totalCount": 7,
+    "deliveryMethod": "delivery",
+    "paymentMethod": "cod",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "pending",
+    "createdAt": "2026-09-29T10:47:50.955Z"
+  },
+  {
+    "orderId": "ORD-260929-1004",
+    "customerName": "werr",
+    "customerPhone": "rr3r3",
+    "orderNote": "Counter / Walk-in Customer",
+    "items": [
+      {
+        "id": "23074",
+        "name": "Flower Pot Ashoka (10 Pc Per Box)",
+        "brand": "Sunshine",
+        "price": 250,
+        "originalPrice": 1170,
+        "quantity": 1,
+        "image": "/products/prod_89_23074.jpg"
+      },
+      {
+        "id": "286",
+        "name": "Mi 2 (2 Sound Rocket)",
+        "brand": "Standard",
+        "price": 260,
+        "originalPrice": 1165,
+        "quantity": 1,
+        "image": "/products/prod_137_286.jpg"
+      },
+      {
+        "id": "22881",
+        "name": "Golden Sky",
+        "brand": "Vanitha",
+        "price": 2600,
+        "originalPrice": 4600,
+        "quantity": 1,
+        "image": "/products/prod_102_22881.jpg"
+      },
+      {
+        "id": "1233",
+        "name": "Relax 50",
+        "brand": "Standard",
+        "price": 1700,
+        "originalPrice": 8280,
+        "quantity": 1,
+        "image": "/products/prod_171_1233.jpeg"
+      },
+      {
+        "id": "23077",
+        "name": "Ganga Jamuna",
+        "brand": "Sunshine",
+        "price": 140,
+        "originalPrice": 492,
+        "quantity": 5,
+        "image": "/products/prod_95_23077.jpg"
+      },
+      {
+        "id": "300",
+        "name": "Jil Jil (10 Pc / Packet)",
+        "brand": "Cock",
+        "price": 70,
+        "originalPrice": 115,
+        "quantity": 1,
+        "image": "/products/prod_122_300.webp"
+      },
+      {
+        "id": "8812",
+        "name": "Bubble",
+        "brand": "Vanitha",
+        "price": 1050,
+        "originalPrice": 2100,
+        "quantity": 1,
+        "image": "/products/prod_65_8812.jpg"
+      },
+      {
+        "id": "525",
+        "name": "Action Replayy (100 Shot Multicolor)",
+        "brand": "Sunshine",
+        "price": 3200,
+        "originalPrice": 15600,
+        "quantity": 1,
+        "image": "/products/prod_52_525.png"
+      },
+      {
+        "id": "290",
+        "name": "Whistling Rocket by Anil (Pieces per Box 10)",
+        "brand": "Anil",
+        "price": 560,
+        "originalPrice": 1640,
+        "quantity": 1,
+        "image": "/products/prod_202_290.webp"
+      },
+      {
+        "id": "1145",
+        "name": "Volcano (30 Shot)",
+        "brand": "Standard",
+        "price": 6000,
+        "originalPrice": 9975,
+        "quantity": 1,
+        "image": "/products/prod_199_1145.png"
+      }
+    ],
+    "subtotal": 16390,
+    "totalSavings": 30715,
+    "totalCount": 14,
+    "deliveryMethod": "pickup",
+    "paymentMethod": "cash_on_pickup",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "pending",
+    "createdAt": "2026-09-29T09:32:31.752Z"
+  },
+  {
+    "orderId": "ORD-260929-1005",
+    "customerName": "Walk-in / WhatsApp Customer",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "496",
+        "name": "Shane Punjab Rocket (10 Pc Per Box)",
+        "brand": "Standard",
+        "price": 180,
+        "originalPrice": 815,
+        "quantity": 1,
+        "image": "/products/prod_175_496.png"
+      },
+      {
+        "id": "283",
+        "name": "Nasa Rocket (Pieces Per Box 10)",
+        "brand": "Standard",
+        "price": 120,
+        "originalPrice": 576,
+        "quantity": 1,
+        "image": "/products/prod_149_283.jpg"
+      },
+      {
+        "id": "1182",
+        "name": "Multi Music Rocket",
+        "brand": "Standard",
+        "price": 650,
+        "originalPrice": 1460,
+        "quantity": 1,
+        "image": "/products/prod_144_1182.png"
+      },
+      {
+        "id": "16262",
+        "name": "3D Pot",
+        "brand": "Vanitha",
+        "price": 450,
+        "originalPrice": 1000,
+        "quantity": 1,
+        "image": "/products/prod_44_16262.png"
+      },
+      {
+        "id": "635",
+        "name": "2 In 1 Mud Flower Pot (10 Pc Per Box)",
+        "brand": "Standard",
+        "price": 600,
+        "originalPrice": 1200,
+        "quantity": 1,
+        "image": "/products/prod_15_635.png"
+      },
+      {
+        "id": "633",
+        "name": "Asharfi Mud Flower Pot (5 Pc Per Box)",
+        "brand": "Standard",
+        "price": 550,
+        "originalPrice": 1100,
+        "quantity": 1,
+        "image": "/products/prod_56_633.png"
+      },
+      {
+        "id": "8812",
+        "name": "Bubble",
+        "brand": "Vanitha",
+        "price": 1050,
+        "originalPrice": 2100,
+        "quantity": 1,
+        "image": "/products/prod_65_8812.jpg"
+      },
+      {
+        "id": "353",
+        "name": "Deluxe Flower Pot (5 Pc Per Box)",
+        "brand": "Azad",
+        "price": 240,
+        "originalPrice": 450,
+        "quantity": 1,
+        "image": "/products/prod_81_353.jpg"
+      },
+      {
+        "id": "440",
+        "name": "Chit Put (Pop Corn) (10Pc per box)",
+        "brand": "Sunshine",
+        "price": 140,
+        "originalPrice": 588,
+        "quantity": 1,
+        "image": "/products/prod_71_440.jpg"
+      }
+    ],
+    "subtotal": 3980,
+    "totalSavings": 5309,
+    "totalCount": 9,
+    "deliveryMethod": "delivery",
+    "paymentMethod": "cod",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "pending",
+    "createdAt": "2026-09-29T08:04:52.708Z"
+  },
+  {
+    "orderId": "ORD-260929-1006",
+    "customerName": "Walk-in / WhatsApp Customer",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "496",
+        "name": "Shane Punjab Rocket (10 Pc Per Box)",
+        "brand": "Standard",
+        "price": 180,
+        "originalPrice": 815,
+        "quantity": 1,
+        "image": "/products/prod_175_496.png"
+      },
+      {
+        "id": "283",
+        "name": "Nasa Rocket (Pieces Per Box 10)",
+        "brand": "Standard",
+        "price": 120,
+        "originalPrice": 576,
+        "quantity": 1,
+        "image": "/products/prod_149_283.jpg"
+      },
+      {
+        "id": "1182",
+        "name": "Multi Music Rocket",
+        "brand": "Standard",
+        "price": 650,
+        "originalPrice": 1460,
+        "quantity": 1,
+        "image": "/products/prod_144_1182.png"
+      },
+      {
+        "id": "16262",
+        "name": "3D Pot",
+        "brand": "Vanitha",
+        "price": 450,
+        "originalPrice": 1000,
+        "quantity": 1,
+        "image": "/products/prod_44_16262.png"
+      },
+      {
+        "id": "635",
+        "name": "2 In 1 Mud Flower Pot (10 Pc Per Box)",
+        "brand": "Standard",
+        "price": 600,
+        "originalPrice": 1200,
+        "quantity": 1,
+        "image": "/products/prod_15_635.png"
+      },
+      {
+        "id": "633",
+        "name": "Asharfi Mud Flower Pot (5 Pc Per Box)",
+        "brand": "Standard",
+        "price": 550,
+        "originalPrice": 1100,
+        "quantity": 1,
+        "image": "/products/prod_56_633.png"
+      },
+      {
+        "id": "8812",
+        "name": "Bubble",
+        "brand": "Vanitha",
+        "price": 1050,
+        "originalPrice": 2100,
+        "quantity": 1,
+        "image": "/products/prod_65_8812.jpg"
+      },
+      {
+        "id": "353",
+        "name": "Deluxe Flower Pot (5 Pc Per Box)",
+        "brand": "Azad",
+        "price": 240,
+        "originalPrice": 450,
+        "quantity": 1,
+        "image": "/products/prod_81_353.jpg"
+      },
+      {
+        "id": "440",
+        "name": "Chit Put (Pop Corn) (10Pc per box)",
+        "brand": "Sunshine",
+        "price": 140,
+        "originalPrice": 588,
+        "quantity": 1,
+        "image": "/products/prod_71_440.jpg"
+      }
+    ],
+    "subtotal": 3980,
+    "totalSavings": 5309,
+    "totalCount": 9,
+    "deliveryMethod": "delivery",
+    "paymentMethod": "cod",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "pending",
+    "createdAt": "2026-09-29T08:03:43.427Z"
+  },
+  {
+    "orderId": "ORD-260929-1007",
+    "customerName": "Walk-in / WhatsApp Customer",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "22720",
+        "name": "1 Star (1k Lar)",
+        "brand": "Standard",
+        "price": 400,
+        "originalPrice": 1750,
+        "quantity": 1,
+        "image": "/products/prod_2_22720.jpg"
+      },
+      {
+        "id": "22846",
+        "name": "@Night",
+        "brand": "Vanitha",
+        "price": 360,
+        "originalPrice": 700,
+        "quantity": 1,
+        "image": "/products/prod_1_22846.jpg"
+      },
+      {
+        "id": "865",
+        "name": "100 Salute",
+        "brand": "Azad",
+        "price": 3200,
+        "originalPrice": 4500,
+        "quantity": 1,
+        "image": "/products/prod_4_865.png"
+      },
+      {
+        "id": "22752",
+        "name": "1.5″ Shell by Mercury (3 Pc/Box)",
+        "brand": "Mercury",
+        "price": 400,
+        "originalPrice": 1500,
+        "quantity": 1,
+        "image": "/products/prod_3_22752.jpg"
+      },
+      {
+        "id": "1221",
+        "name": "100 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2500,
+        "originalPrice": 9000,
+        "quantity": 1,
+        "image": "/products/prod_5_1221.png"
+      },
+      {
+        "id": "23067",
+        "name": "100 Shot (Ramith) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2600,
+        "originalPrice": 9500,
+        "quantity": 1,
+        "image": "/products/prod_6_23067.jpg"
+      },
+      {
+        "id": "8900",
+        "name": "120 Shot (Mercury)",
+        "brand": "Mercury",
+        "price": 3000,
+        "originalPrice": 10600,
+        "quantity": 1,
+        "image": "/products/prod_8_8900.jpg"
+      },
+      {
+        "id": "1270",
+        "name": "12 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 250,
+        "originalPrice": 900,
+        "quantity": 1,
+        "image": "/products/prod_7_1270.jpeg"
+      },
+      {
+        "id": "1226",
+        "name": "14 cm Electric Sparklers (5 Box Pack)",
+        "brand": "Standard",
+        "price": 200,
+        "originalPrice": 1100,
+        "quantity": 1,
+        "image": "/products/prod_10_1226.jpeg"
+      },
+      {
+        "id": "1206",
+        "name": "14 cm Coloured Sparklers (5 Box Pack)",
+        "brand": "Standard",
+        "price": 200,
+        "originalPrice": 1100,
+        "quantity": 1,
+        "image": "/products/prod_9_1206.png"
+      },
+      {
+        "id": "828",
+        "name": "2 in 1 Sparklers (5 Box Pack)",
+        "brand": "Standard",
+        "price": 200,
+        "originalPrice": 1600,
+        "quantity": 1,
+        "image": "/products/prod_16_828.png"
+      },
+      {
+        "id": "635",
+        "name": "2 In 1 Mud Flower Pot (10 Pc Per Box)",
+        "brand": "Standard",
+        "price": 600,
+        "originalPrice": 1200,
+        "quantity": 1,
+        "image": "/products/prod_15_635.png"
+      },
+      {
+        "id": "22338",
+        "name": "2000 Bug (2 Nos)",
+        "brand": "Sony",
+        "price": 1700,
+        "originalPrice": 3525,
+        "quantity": 1,
+        "image": "/products/prod_18_22338.jpg"
+      },
+      {
+        "id": "8875",
+        "name": "2 Sound",
+        "brand": "Two Rose",
+        "price": 80,
+        "originalPrice": 160,
+        "quantity": 1,
+        "image": "/products/prod_17_8875.jpg"
+      }
+    ],
+    "subtotal": 15690,
+    "totalSavings": 31445,
+    "totalCount": 14,
+    "deliveryMethod": "delivery",
+    "paymentMethod": "cod",
+    "addressLine": "",
+    "areaJaipur": "",
+    "pincode": "",
+    "status": "pending",
+    "createdAt": "2026-09-29T07:43:34.192Z"
+  },
+  {
+    "orderId": "ORD-614466",
+    "customerName": "Walk-in / WhatsApp Customer",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "635",
+        "name": "2 In 1 Mud Flower Pot (10 Pc Per Box)",
+        "brand": "Standard",
+        "price": 600,
+        "originalPrice": 1200,
+        "image": "/products/prod_15_635.png",
+        "quantity": 1
+      },
+      {
+        "id": "22846",
+        "name": "@Night",
+        "brand": "Vanitha",
+        "price": 360,
+        "originalPrice": 700,
+        "image": "/products/prod_1_22846.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "8875",
+        "name": "2 Sound",
+        "brand": "Two Rose",
+        "price": 80,
+        "originalPrice": 160,
+        "image": "/products/prod_17_8875.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "16262",
+        "name": "3D Pot",
+        "brand": "Vanitha",
+        "price": 450,
+        "originalPrice": 1000,
+        "image": "/products/prod_44_16262.png",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 1490,
+    "totalSavings": 1570,
+    "totalCount": 4,
+    "status": "pending",
+    "createdAt": "2026-09-28T13:56:31.493Z"
+  },
+  {
+    "orderId": "ORD-593310",
+    "customerName": "Walk-in / WhatsApp Guest",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "22752",
+        "name": "1.5″ Shell by Mercury (3 Pc/Box)",
+        "brand": "Mercury",
+        "price": 400,
+        "originalPrice": 1500,
+        "image": "/products/prod_3_22752.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22720",
+        "name": "1 Star (1k Lar)",
+        "brand": "Standard",
+        "price": 400,
+        "originalPrice": 1750,
+        "image": "/products/prod_2_22720.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22846",
+        "name": "@Night",
+        "brand": "Vanitha",
+        "price": 360,
+        "originalPrice": 700,
+        "image": "/products/prod_1_22846.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 1160,
+    "totalSavings": 2790,
+    "totalCount": 3,
+    "status": "pending",
+    "createdAt": "2026-09-28T13:46:14.786Z"
+  },
+  {
+    "orderId": "ORD-526130",
+    "customerName": "Walk-in / WhatsApp Guest",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "342",
+        "name": "28 CHORSA CRACKERS (50 Pc)",
+        "brand": "Mercury",
+        "price": 950,
+        "originalPrice": 4000,
+        "image": "/products/prod_22_342.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "1084",
+        "name": "2k Lar ( 2000 Lar )",
+        "brand": "Standard",
+        "price": 1000,
+        "originalPrice": 6400,
+        "image": "/products/prod_23_1084.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "662",
+        "name": "333 Time Bomb",
+        "brand": "Azad",
+        "price": 180,
+        "originalPrice": 335,
+        "image": "/products/prod_43_662.png",
+        "quantity": 2
+      },
+      {
+        "id": "22735",
+        "name": "5 Star (5K)",
+        "brand": "Standard",
+        "price": 1800,
+        "originalPrice": 10000,
+        "image": "/products/prod_47_22735.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "551",
+        "name": "555 Time Bomb (Cartridge Bomb)",
+        "brand": "Azad",
+        "price": 240,
+        "originalPrice": 445,
+        "image": "/products/prod_48_551.png",
+        "quantity": 1
+      },
+      {
+        "id": "291",
+        "name": "Atom Bomb Funnel (Pieces Per Box 10)",
+        "brand": "Anil",
+        "price": 200,
+        "originalPrice": 404,
+        "image": "/products/prod_57_291.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 4550,
+    "totalSavings": 17369,
+    "totalCount": 7,
+    "status": "pending",
+    "createdAt": "2026-09-28T13:18:33.455Z"
+  },
+  {
+    "orderId": "ORD-217550",
+    "customerName": "Walk-in / WhatsApp Guest",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "342",
+        "name": "28 CHORSA CRACKERS (50 Pc)",
+        "brand": "Mercury",
+        "price": 950,
+        "originalPrice": 4000,
+        "image": "/products/prod_22_342.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "1084",
+        "name": "2k Lar ( 2000 Lar )",
+        "brand": "Standard",
+        "price": 1000,
+        "originalPrice": 6400,
+        "image": "/products/prod_23_1084.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "662",
+        "name": "333 Time Bomb",
+        "brand": "Azad",
+        "price": 180,
+        "originalPrice": 335,
+        "image": "/products/prod_43_662.png",
+        "quantity": 2
+      },
+      {
+        "id": "22735",
+        "name": "5 Star (5K)",
+        "brand": "Standard",
+        "price": 1800,
+        "originalPrice": 10000,
+        "image": "/products/prod_47_22735.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "551",
+        "name": "555 Time Bomb (Cartridge Bomb)",
+        "brand": "Azad",
+        "price": 240,
+        "originalPrice": 445,
+        "image": "/products/prod_48_551.png",
+        "quantity": 1
+      },
+      {
+        "id": "291",
+        "name": "Atom Bomb Funnel (Pieces Per Box 10)",
+        "brand": "Anil",
+        "price": 200,
+        "originalPrice": 404,
+        "image": "/products/prod_57_291.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 4550,
+    "totalSavings": 17369,
+    "totalCount": 7,
+    "status": "pending",
+    "createdAt": "2026-09-28T13:16:34.886Z"
+  },
+  {
+    "orderId": "ORD-781479",
+    "customerName": "Walk-in / WhatsApp Guest",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "342",
+        "name": "28 CHORSA CRACKERS (50 Pc)",
+        "brand": "Mercury",
+        "price": 950,
+        "originalPrice": 4000,
+        "image": "/products/prod_22_342.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "1084",
+        "name": "2k Lar ( 2000 Lar )",
+        "brand": "Standard",
+        "price": 1000,
+        "originalPrice": 6400,
+        "image": "/products/prod_23_1084.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "662",
+        "name": "333 Time Bomb",
+        "brand": "Azad",
+        "price": 180,
+        "originalPrice": 335,
+        "image": "/products/prod_43_662.png",
+        "quantity": 2
+      },
+      {
+        "id": "22735",
+        "name": "5 Star (5K)",
+        "brand": "Standard",
+        "price": 1800,
+        "originalPrice": 10000,
+        "image": "/products/prod_47_22735.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "551",
+        "name": "555 Time Bomb (Cartridge Bomb)",
+        "brand": "Azad",
+        "price": 240,
+        "originalPrice": 445,
+        "image": "/products/prod_48_551.png",
+        "quantity": 1
+      },
+      {
+        "id": "291",
+        "name": "Atom Bomb Funnel (Pieces Per Box 10)",
+        "brand": "Anil",
+        "price": 200,
+        "originalPrice": 404,
+        "image": "/products/prod_57_291.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 4550,
+    "totalSavings": 17369,
+    "totalCount": 7,
+    "status": "pending",
+    "createdAt": "2026-09-28T13:16:13.735Z"
+  },
+  {
+    "orderId": "ORD-535945",
+    "customerName": "RA",
+    "customerPhone": "7956675363",
+    "orderNote": "DELIVERY: WQ, WQWQ, Jaipur - 302005 | Event: Diwali (Standard) | Notes: ",
+    "items": [
+      {
+        "id": "22720",
+        "name": "1 Star (1k Lar)",
+        "brand": "Standard",
+        "price": 400,
+        "originalPrice": 1750,
+        "image": "/products/prod_2_22720.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22846",
+        "name": "@Night",
+        "brand": "Vanitha",
+        "price": 360,
+        "originalPrice": 700,
+        "image": "/products/prod_1_22846.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "865",
+        "name": "100 Salute",
+        "brand": "Azad",
+        "price": 3200,
+        "originalPrice": 4500,
+        "image": "/products/prod_4_865.png",
+        "quantity": 1
+      },
+      {
+        "id": "22752",
+        "name": "1.5″ Shell by Mercury (3 Pc/Box)",
+        "brand": "Mercury",
+        "price": 400,
+        "originalPrice": 1500,
+        "image": "/products/prod_3_22752.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "1221",
+        "name": "100 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2500,
+        "originalPrice": 9000,
+        "image": "/products/prod_5_1221.png",
+        "quantity": 1
+      },
+      {
+        "id": "23067",
+        "name": "100 Shot (Ramith) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2600,
+        "originalPrice": 9500,
+        "image": "/products/prod_6_23067.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "8900",
+        "name": "120 Shot (Mercury)",
+        "brand": "Mercury",
+        "price": 3000,
+        "originalPrice": 10600,
+        "image": "/products/prod_8_8900.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 12460,
+    "totalSavings": 25090,
+    "totalCount": 7,
+    "status": "pending",
+    "createdAt": "2026-09-28T12:48:16.052Z"
+  },
+  {
+    "orderId": "ORD-912210",
+    "customerName": "Walk-in / WhatsApp Guest",
+    "customerPhone": "Not provided",
+    "orderNote": "",
+    "items": [
+      {
+        "id": "22720",
+        "name": "1 Star (1k Lar)",
+        "brand": "Standard",
+        "price": 400,
+        "originalPrice": 1750,
+        "image": "/products/prod_2_22720.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22846",
+        "name": "@Night",
+        "brand": "Vanitha",
+        "price": 360,
+        "originalPrice": 700,
+        "image": "/products/prod_1_22846.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "865",
+        "name": "100 Salute",
+        "brand": "Azad",
+        "price": 3200,
+        "originalPrice": 4500,
+        "image": "/products/prod_4_865.png",
+        "quantity": 1
+      },
+      {
+        "id": "22752",
+        "name": "1.5″ Shell by Mercury (3 Pc/Box)",
+        "brand": "Mercury",
+        "price": 400,
+        "originalPrice": 1500,
+        "image": "/products/prod_3_22752.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "1221",
+        "name": "100 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2500,
+        "originalPrice": 9000,
+        "image": "/products/prod_5_1221.png",
+        "quantity": 1
+      },
+      {
+        "id": "23067",
+        "name": "100 Shot (Ramith) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2600,
+        "originalPrice": 9500,
+        "image": "/products/prod_6_23067.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "8900",
+        "name": "120 Shot (Mercury)",
+        "brand": "Mercury",
+        "price": 3000,
+        "originalPrice": 10600,
+        "image": "/products/prod_8_8900.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 12460,
+    "totalSavings": 25090,
+    "totalCount": 7,
+    "status": "pending",
+    "createdAt": "2026-09-28T12:47:15.983Z"
+  },
+  {
+    "orderId": "ORD-785277",
+    "customerName": "naman testing",
+    "customerPhone": "7339830827",
+    "orderNote": "DELIVERY: 2132, near blinkit, vaishali nagar, Jaipur - 302009 | Event: Diwali (2026-10-13) | Notes: please take care of rockets pack it safely",
+    "items": [
+      {
+        "id": "22720",
+        "name": "1 Star (1k Lar)",
+        "brand": "Standard",
+        "price": 400,
+        "originalPrice": 1750,
+        "image": "/products/prod_2_22720.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22846",
+        "name": "@Night",
+        "brand": "Vanitha",
+        "price": 360,
+        "originalPrice": 700,
+        "image": "/products/prod_1_22846.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22752",
+        "name": "1.5″ Shell by Mercury (3 Pc/Box)",
+        "brand": "Mercury",
+        "price": 400,
+        "originalPrice": 1500,
+        "image": "/products/prod_3_22752.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "865",
+        "name": "100 Salute",
+        "brand": "Azad",
+        "price": 3200,
+        "originalPrice": 4500,
+        "image": "/products/prod_4_865.png",
+        "quantity": 1
+      },
+      {
+        "id": "23067",
+        "name": "100 Shot (Ramith) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2600,
+        "originalPrice": 9500,
+        "image": "/products/prod_6_23067.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "1221",
+        "name": "100 Shot (Mercury) (1 Pc)",
+        "brand": "Mercury",
+        "price": 2500,
+        "originalPrice": 9000,
+        "image": "/products/prod_5_1221.png",
+        "quantity": 1
+      },
+      {
+        "id": "1226",
+        "name": "14 cm Electric Sparklers (5 Box Pack)",
+        "brand": "Standard",
+        "price": 200,
+        "originalPrice": 1100,
+        "image": "/products/prod_10_1226.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "1206",
+        "name": "14 cm Coloured Sparklers (5 Box Pack)",
+        "brand": "Standard",
+        "price": 200,
+        "originalPrice": 1100,
+        "image": "/products/prod_9_1206.png",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 9860,
+    "totalSavings": 19290,
+    "totalCount": 8,
+    "status": "pending",
+    "createdAt": "2026-09-28T12:36:01.962Z"
+  },
+  {
+    "orderId": "ORD-334162",
+    "customerName": "raaw",
+    "customerPhone": "7956675363",
+    "orderNote": "DELIVERY: 2122, 1, Jaipur - 302002 | Event: Diwali (2026-10-29) | Notes: ",
+    "items": [
+      {
+        "id": "22394",
+        "name": "150 Hand Shot",
+        "brand": "Standard",
+        "price": 1000,
+        "originalPrice": 1000,
+        "image": "/products/prod_11_22394.png",
+        "quantity": 1
+      },
+      {
+        "id": "554",
+        "name": "18 cm Coloured Sparklers (5 Box Pack)",
+        "brand": "Standard",
+        "price": 300,
+        "originalPrice": 2000,
+        "image": "/products/prod_12_554.png",
+        "quantity": 1
+      },
+      {
+        "id": "1226",
+        "name": "14 cm Electric Sparklers (5 Box Pack)",
+        "brand": "Standard",
+        "price": 200,
+        "originalPrice": 1100,
+        "image": "/products/prod_10_1226.jpeg",
+        "quantity": 3
+      }
+    ],
+    "subtotal": 1900,
+    "totalSavings": 4400,
+    "totalCount": 5,
+    "status": "pending",
+    "createdAt": "2026-09-28T11:43:39.392Z"
+  },
+  {
+    "orderId": "ORD-886214",
+    "customerName": "naman",
+    "customerPhone": "7956675363",
+    "orderNote": "DELIVERY: 2122, 1, Jaipur - 302009 | Event: Diwali (Standard) | Notes: ",
+    "items": [
+      {
+        "id": "635",
+        "name": "2 In 1 Mud Flower Pot (10 Pc Per Box)",
+        "brand": "Standard",
+        "price": 600,
+        "originalPrice": 1200,
+        "image": "/products/prod_15_635.png",
+        "quantity": 2
+      },
+      {
+        "id": "16262",
+        "name": "3D Pot",
+        "brand": "Vanitha",
+        "price": 450,
+        "originalPrice": 1000,
+        "image": "/products/prod_44_16262.png",
+        "quantity": 1
+      },
+      {
+        "id": "633",
+        "name": "Asharfi Mud Flower Pot (5 Pc Per Box)",
+        "brand": "Standard",
+        "price": 550,
+        "originalPrice": 1100,
+        "image": "/products/prod_56_633.png",
+        "quantity": 3
+      },
+      {
+        "id": "353",
+        "name": "Deluxe Flower Pot (5 Pc Per Box)",
+        "brand": "Azad",
+        "price": 240,
+        "originalPrice": 450,
+        "image": "/products/prod_81_353.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "440",
+        "name": "Chit Put (Pop Corn) (10Pc per box)",
+        "brand": "Sunshine",
+        "price": 140,
+        "originalPrice": 588,
+        "image": "/products/prod_71_440.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "8781",
+        "name": "Chit Put",
+        "brand": "Standard",
+        "price": 100,
+        "originalPrice": 360,
+        "image": "/products/prod_70_8781.jpeg",
+        "quantity": 1
+      },
+      {
+        "id": "8810",
+        "name": "Caterpillar Fountain",
+        "brand": "Vanitha",
+        "price": 1050,
+        "originalPrice": 2100,
+        "image": "/products/prod_68_8810.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 4830,
+    "totalSavings": 5368,
+    "totalCount": 10,
+    "status": "pending",
+    "createdAt": "2026-09-28T11:03:51.151Z"
+  },
+  {
+    "orderId": "ORD-700809",
+    "customerName": "ra",
+    "customerPhone": "7956675363",
+    "orderNote": "DELIVERY: 2122, 1, Jaipur - 302002 | Event: Diwali (Standard) | Notes: ",
+    "items": [
+      {
+        "id": "22752",
+        "name": "1.5″ Shell by Mercury (3 Pc/Box)",
+        "brand": "Mercury",
+        "price": 400,
+        "originalPrice": 1500,
+        "image": "/products/prod_3_22752.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22720",
+        "name": "1 Star (1k Lar)",
+        "brand": "Standard",
+        "price": 400,
+        "originalPrice": 1750,
+        "image": "/products/prod_2_22720.jpg",
+        "quantity": 1
+      },
+      {
+        "id": "22846",
+        "name": "@Night",
+        "brand": "Vanitha",
+        "price": 360,
+        "originalPrice": 700,
+        "image": "/products/prod_1_22846.jpg",
+        "quantity": 1
+      }
+    ],
+    "subtotal": 1160,
+    "totalSavings": 2790,
+    "totalCount": 3,
+    "status": "pending",
+    "createdAt": "2026-09-28T10:37:32.785Z"
+  },
+  {
+    "orderId": "ORD-910701",
+    "customerName": "Pooja Verma",
+    "customerPhone": "9829012345",
+    "orderNote": "Diwali family pack",
+    "items": [
+      {
+        "id": "1221",
+        "name": "10cm Special Sparklers",
+        "price": 150,
+        "quantity": 3
+      }
+    ],
+    "subtotal": 450,
+    "totalSavings": 50,
+    "totalCount": 3,
+    "status": "pending",
+    "createdAt": "2026-09-26T11:13:51.645Z"
+  },
+  {
+    "orderId": "ORD-147964",
+    "customerName": "Pooja Verma",
+    "customerPhone": "9829012345",
+    "orderNote": "Diwali family pack",
+    "items": [
+      {
+        "id": "1221",
+        "name": "10cm Special Sparklers",
+        "price": 150,
+        "quantity": 3
+      }
+    ],
+    "subtotal": 450,
+    "totalSavings": 50,
+    "totalCount": 3,
+    "status": "pending",
+    "createdAt": "2026-09-26T11:12:49.208Z"
+  }
+]

@@ -1,0 +1,103 @@
+/* ───────────────────────────────────────────────────────────
+   High-Performance Firework Animation Stage
+   - Silky Smooth 60FPS Hardware-Accelerated Rendering
+   - 0ms load latency, 0KB heavy GIF bloat, 0 Lag
+   ─────────────────────────────────────────────────────────── */
+
+.animationContainer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: inherit;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Deep Night Sky Background */
+.nightSky {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 60%, #15062D 0%, #080114 100%);
+  transition: background 0.4s ease;
+  z-index: 1;
+}
+
+/* Category Specific Celestial Hues */
+.sky_ring_caps {
+  background: radial-gradient(circle at 50% 50%, #2A0824 0%, #0A0214 100%);
+}
+
+.sky_bombs {
+  background: radial-gradient(circle at 50% 60%, #260A0A 0%, #0B0202 100%);
+}
+
+.sky_chakkar {
+  background: radial-gradient(circle at 50% 50%, #281404 0%, #0B0401 100%);
+}
+
+.sky_crackers {
+  background: radial-gradient(circle at 50% 40%, #2E060E 0%, #0D0104 100%);
+}
+
+.sky_skyshots {
+  background: radial-gradient(circle at 50% 40%, #0E1338 0%, #030514 100%);
+}
+
+.sky_aerial_cakes {
+  background: radial-gradient(circle at 50% 50%, #1F0833 0%, #080114 100%);
+}
+
+.sky_rockets {
+  background: radial-gradient(circle at 50% 60%, #280E04 0%, #0C0301 100%);
+}
+
+.sky_torches {
+  background: radial-gradient(circle at 50% 60%, #05222E 0%, #010A0F 100%);
+}
+
+.sky_flowerpots {
+  background: radial-gradient(circle at 50% 70%, #2E1502 0%, #0B0400 100%);
+}
+
+.sky_sparklers {
+  background: radial-gradient(circle at 50% 45%, #2B1D04 0%, #0C0801 100%);
+}
+
+.sky_kids_special {
+  background: radial-gradient(circle at 50% 50%, #240833 0%, #0A0114 100%);
+}
+
+.sky_all {
+  background: radial-gradient(circle at 50% 50%, #1E0738 0%, #060112 100%);
+}
+
+/* 60FPS Canvas Layer */
+.fireworkCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Ambient Radial Aura for soft cinematic glow */
+.auraLight {
+  position: absolute;
+  inset: -10%;
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(24px);
+  pointer-events: none;
+  z-index: 3;
+  animation: auraBreath 4s ease-in-out infinite alternate;
+}
+
+@keyframes auraBreath {
+  0% { transform: scale(0.95); opacity: 0.45; }
+  100% { transform: scale(1.05); opacity: 0.75; }
+}

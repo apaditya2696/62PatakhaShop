@@ -1,0 +1,133 @@
+.pageWrap {
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  padding-bottom: 120px;
+}
+
+.header {
+  padding: 80px 0 48px;
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.title {
+  font-size: 52px;
+  font-weight: 500;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 660px;
+  line-height: 1.65;
+}
+
+.storiesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 60px 0;
+}
+
+.featuredStory {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+}
+
+.storyCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  transition: all 0.35s var(--ease-editorial);
+  display: flex;
+  flex-direction: column;
+}
+
+.storyCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--gold-border);
+}
+
+.storyContent {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.collectionBadge {
+  color: var(--gold-dark);
+  font-weight: 600;
+}
+
+.storyTitle {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+  transition: color 0.2s;
+}
+
+.storyTitle:hover {
+  color: var(--gold-dark);
+}
+
+.featuredStory .storyTitle {
+  font-size: 38px;
+}
+
+.storyExcerpt {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+
+.readMore {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--gold-dark);
+  transition: gap 0.2s;
+}
+
+.storyCard:hover .readMore {
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .storiesGrid {
+    grid-template-columns: 1fr;
+  }
+  .featuredStory {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
+}

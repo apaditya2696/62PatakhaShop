@@ -1,0 +1,171 @@
+/* Legal pages — 62 Patakha Shop Warm Editorial Theme */
+
+.pageHeader {
+  position: relative;
+  padding: 80px 24px 50px;
+  text-align: center;
+  background: linear-gradient(180deg, #FAF8F5 0%, #F5EFE6 100%);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.headerContent {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 600;
+  margin: 12px 0 8px;
+  color: #1C1A17;
+  letter-spacing: -0.02em;
+}
+
+.headerSubtitle {
+  font-size: 15px;
+  color: #6E675F;
+  line-height: 1.6;
+}
+
+.contentWrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 100px;
+}
+
+.card {
+  background: #FFFFFF;
+  border: 1.5px solid #E8D3A7;
+  border-radius: 16px;
+  box-shadow: 0 10px 36px rgba(168, 121, 48, 0.12), 0 2px 8px rgba(28, 26, 23, 0.04);
+  padding: 48px 44px;
+  line-height: 1.8;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #926315;
+  text-decoration: none;
+  margin-bottom: 24px;
+  transition: all 0.2s ease;
+}
+
+.backLink:hover {
+  gap: 12px;
+  color: #C99E52;
+}
+
+.lastUpdated {
+  font-size: 12.5px;
+  color: #8C8275;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.intro {
+  font-size: 15.5px;
+  color: #3D3730;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-top: 36px;
+  padding-top: 32px;
+  border-top: 1px solid #F0E8D8;
+}
+
+.section h2 {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 700;
+  color: #1C1A17;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section h2::before {
+  content: '✦';
+  color: #C99E52;
+  font-size: 14px;
+}
+
+.section p {
+  font-size: 15px;
+  color: #4A4237;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.termsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.termsList li {
+  font-size: 15px;
+  color: #4A4237;
+  line-height: 1.75;
+  padding-left: 26px;
+  position: relative;
+}
+
+.termsList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #926315;
+  font-weight: 700;
+  font-size: 14px;
+  top: 1px;
+}
+
+.highlightBox {
+  background: #FDF9F2;
+  border: 1px solid #EADBBE;
+  border-left: 4px solid #C99E52;
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 14.5px;
+  color: #3D3730;
+  line-height: 1.7;
+}
+
+.inlineLink {
+  color: #926315;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: opacity 0.2s;
+}
+
+.inlineLink:hover {
+  opacity: 0.8;
+  color: #C99E52;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+  .contentWrap {
+    padding: 24px 16px 60px;
+  }
+  .pageHeader {
+    padding: 60px 16px 40px;
+  }
+}

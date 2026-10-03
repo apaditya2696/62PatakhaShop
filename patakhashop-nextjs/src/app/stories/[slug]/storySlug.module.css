@@ -1,0 +1,188 @@
+.article {
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  padding-bottom: 120px;
+}
+
+.breadcrumbBar {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-light);
+  background: var(--bg-secondary);
+}
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.breadcrumbs a:hover {
+  color: var(--gold-dark);
+}
+
+.current {
+  color: var(--text-primary);
+  font-weight: 600;
+  max-width: 400px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.storyHeader {
+  padding: 80px 0 48px;
+  text-align: center;
+}
+
+.headerInner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.meta {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.coverWrap {
+  max-width: 1080px;
+  margin: 0 auto 60px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.contentWrap {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.leadParagraph {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--text-primary);
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.storySection {
+  margin-bottom: 40px;
+}
+
+.sectionHeading {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: var(--text-primary);
+}
+
+.sectionBody {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.pullQuote {
+  margin: 36px 0;
+  padding: 24px 32px;
+  border-left: 2px solid var(--gold-primary);
+  background: var(--bg-card-subtle);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.pullQuote p {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.45;
+  color: var(--gold-dark);
+}
+
+.safetyBox {
+  margin: 50px 0;
+  padding: 28px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+}
+
+.safetyBadge {
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--gold-dark);
+  margin-bottom: 10px;
+}
+
+.safetyText {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.catalogCtaBox {
+  margin-top: 60px;
+  padding: 48px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid var(--gold-border);
+}
+
+.catalogCtaBox h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.catalogCtaBox p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaBtns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+  .leadParagraph {
+    font-size: 20px;
+  }
+}

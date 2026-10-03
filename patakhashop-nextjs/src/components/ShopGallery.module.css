@@ -1,0 +1,231 @@
+/* ── SHOP GALLERY MODULE CSS ── */
+.galleryWrap {
+  width: 100%;
+  margin-top: 36px;
+}
+
+/* ── Filter Tabs ── */
+.filterTabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.tabBtn {
+  font-family: var(--font-h);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  transition: all 0.25s var(--ease);
+  letter-spacing: 0.3px;
+}
+
+.tabBtn:hover {
+  background: rgba(255, 0, 144, 0.15);
+  border-color: rgba(255, 0, 144, 0.4);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.tabActive {
+  background: var(--pink) !important;
+  border-color: var(--pink) !important;
+  color: #fff !important;
+  box-shadow: 0 0 20px rgba(255, 0, 144, 0.4);
+}
+
+/* ── Grid Layout (No Gaps, Perfectly Structured) ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Featured large card on first column */
+.cardFeatured {
+  grid-column: span 1;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cardFeatured {
+    grid-column: span 1;
+  }
+}
+
+/* Card */
+.card {
+  position: relative;
+  height: 310px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px solid rgba(255, 0, 144, 0.2);
+  background: var(--bg3);
+  cursor: pointer;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), border-color 0.35s var(--ease);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--pink);
+  box-shadow: 0 16px 36px rgba(255, 0, 144, 0.38);
+}
+
+.imgContainer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  object-fit: cover;
+  transition: transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.card:hover .img {
+  transform: scale(1.05);
+}
+
+/* ── Fullscreen Lightbox Modal (Clean, No bottom text clutter) ── */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(8, 0, 22, 0.92);
+  backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  animation: fadeIn 0.22s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.lightboxContent {
+  position: relative;
+  width: 100%;
+  max-width: 1060px;
+  height: 90vh;
+  max-height: 820px;
+  background: #0a001a;
+  border: 1.5px solid rgba(255, 0, 144, 0.38);
+  border-radius: 18px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.9), 0 0 45px rgba(255, 0, 144, 0.28);
+}
+
+.lightboxImageWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #0a001a;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 20;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #fff;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.closeBtn:hover {
+  background: var(--pink);
+  border-color: var(--pink);
+  transform: rotate(90deg);
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  line-height: 1;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.prevBtn { left: 16px; }
+.nextBtn { right: 16px; }
+
+.navBtn:hover {
+  background: var(--pink);
+  border-color: var(--pink);
+  transform: translateY(-50%) scale(1.1);
+}
+
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .card {
+    height: 240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card {
+    height: 175px;
+    border-radius: 14px;
+  }
+  .filterTabs {
+    gap: 6px;
+    margin-bottom: 22px;
+  }
+  .tabBtn {
+    font-size: 11px;
+    padding: 6px 12px;
+  }
+  .lightboxContent {
+    height: 90vh;
+  }
+}
+
+

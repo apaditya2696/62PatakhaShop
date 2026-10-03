@@ -1,0 +1,265 @@
+.stickyBar {
+  position: sticky;
+  top: var(--nav-height);
+  z-index: 40;
+  background: rgba(251, 248, 242, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-light);
+  padding: 12px 0 10px;
+  box-shadow: 0 4px 16px rgba(28, 26, 23, 0.04);
+}
+
+.barInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.searchWrapper {
+  position: relative;
+  flex-grow: 1;
+  max-width: 480px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 9px 34px 9px 38px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  font-size: 13.5px;
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px rgba(201, 158, 82, 0.15);
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 11px;
+  color: var(--text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.controlsRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.selectWrap {
+  min-width: 165px;
+}
+
+.countBadge {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 7px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-pill);
+  box-shadow: 0 1px 2px rgba(28, 26, 23, 0.03);
+}
+
+.pillsContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.pillsRail {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  cursor: grab;
+  user-select: none;
+  width: 100%;
+}
+
+.pillsRail:active {
+  cursor: grabbing;
+}
+
+.pillsRail::-webkit-scrollbar {
+  display: none;
+}
+
+.arrowBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1.5px solid #DFC488;
+  box-shadow: 0 4px 12px rgba(28, 26, 23, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1C1A17;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  padding: 0;
+}
+
+.arrowBtn:hover {
+  background: linear-gradient(135deg, #C99E52 0%, #A87930 100%);
+  color: #FFFFFF;
+  border-color: #986E2A;
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 14px rgba(168, 121, 48, 0.35);
+}
+
+.arrowLeft {
+  left: -12px;
+}
+
+.arrowRight {
+  right: -12px;
+}
+
+.pillBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  transition: all 0.2s var(--ease-editorial);
+  flex-shrink: 0;
+}
+
+.pillBtn:hover {
+  border-color: var(--gold-border);
+  color: var(--text-primary);
+}
+
+.pillBtnActive,
+.pillBtnActive:hover,
+.pillBtnActive:focus,
+.pillBtnActive:active {
+  background: linear-gradient(135deg, #C99E52 0%, #A87930 100%) !important;
+  color: #FFFFFF !important;
+  border-color: #986E2A !important;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(168, 121, 48, 0.35);
+}
+
+.pillBtnActive span,
+.pillBtnActive:hover span {
+  color: #FFFFFF !important;
+}
+
+.pillCount {
+  font-size: 10px;
+  opacity: 0.85;
+  background: rgba(28, 26, 23, 0.08);
+  color: inherit;
+  padding: 1px 6px;
+  border-radius: 999px;
+}
+
+.pillBtnActive .pillCount,
+.pillBtnActive:hover .pillCount {
+  background: rgba(255, 255, 255, 0.3) !important;
+  color: #FFFFFF !important;
+}
+
+/* ════════════════════════════════════════════════
+   MOBILE VIEWPORT OPTIMIZATIONS (< 768px)
+   Senior Mobile UI: 
+   - Search on top full width
+   - Dropdowns side-by-side in a 2-column flex
+   - Pill rail horizontal swipe
+   ════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .stickyBar {
+    padding: 10px 0 8px;
+  }
+
+  .barInner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .searchWrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .searchInput {
+    font-size: 13px;
+    padding: 8px 32px 8px 36px;
+  }
+
+  .controlsRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .selectWrap {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .countBadge {
+    display: none; /* Count is already visible in category pills and item grids */
+  }
+
+  .arrowBtn {
+    display: none;
+  }
+
+  .pillsRail {
+    gap: 6px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pillBtn {
+    padding: 6px 13px;
+    font-size: 11.5px;
+  }
+}

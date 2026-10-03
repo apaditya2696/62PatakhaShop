@@ -1,0 +1,288 @@
+/* ── ROCKET BOY HERO MODULE CSS ── */
+
+.boyWidget {
+  position: absolute;
+  right: clamp(16px, 3vw, 36px);
+  bottom: clamp(16px, 2.5vw, 28px);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Character Card */
+.boyCard {
+  position: relative;
+  width: clamp(130px, 13vw, 175px);
+  height: clamp(130px, 13vw, 175px);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 0, 144, 0.4);
+  background: radial-gradient(circle at center, #240050 0%, #0e0028 85%);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    0 0 20px rgba(255, 0, 144, 0.35),
+    inset 0 0 15px rgba(255, 215, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  user-select: none;
+}
+
+.boyCard:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: var(--pink);
+  box-shadow:
+    0 16px 40px rgba(0, 0, 0, 0.7),
+    0 0 35px rgba(255, 0, 144, 0.6),
+    0 0 20px rgba(255, 215, 0, 0.4);
+}
+
+.boyCard:active {
+  transform: scale(0.97);
+}
+
+.boyImg {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.boyCard:hover .boyImg {
+  transform: scale(1.05);
+}
+
+/* Sparkler Tip Glow on the boy's stick */
+.sparklerGlow {
+  position: absolute;
+  top: 42%;
+  right: 28%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow:
+    0 0 10px #FFD700,
+    0 0 20px #FF8C00,
+    0 0 30px #FF0090;
+  animation: sparklerFlicker 0.4s infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes sparklerFlicker {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.8;
+    box-shadow: 0 0 8px #FFD700, 0 0 16px #FF8C00;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 1;
+    box-shadow: 0 0 14px #FFF, 0 0 26px #FFD700, 0 0 40px #FF0090;
+  }
+}
+
+/* Call to action badge */
+.launchBadge {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(255, 0, 144, 0.2);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 0, 144, 0.5);
+  font-family: var(--font-h);
+  font-size: 11px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 14px rgba(255, 0, 144, 0.3);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  animation: badgePulse 2s infinite ease-in-out;
+}
+
+.boyWidget:hover .launchBadge {
+  background: var(--pink);
+  border-color: var(--pink);
+  box-shadow: 0 0 20px rgba(255, 0, 144, 0.7);
+  transform: translateY(-2px);
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    border-color: #FFD700;
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.5);
+  }
+}
+
+.rocketIcon {
+  font-size: 13px;
+  display: inline-block;
+  animation: rocketWiggle 1.5s infinite ease-in-out;
+}
+
+@keyframes rocketWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+}
+
+/* ════════════════════════════════════════════════
+   FULL-SCREEN 3D ROCKET FLIGHT & BURST OVERLAY
+   ════════════════════════════════════════════════ */
+.overlay3D {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  pointer-events: none;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Screen Flash when rocket pops */
+.screenFlash {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.85) 0%, rgba(255, 215, 0, 0.4) 40%, transparent 80%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.screenFlashActive {
+  animation: flashBurst 0.6s ease-out forwards;
+}
+
+@keyframes flashBurst {
+  0% { opacity: 0.9; transform: scale(0.95); }
+  50% { opacity: 0.6; }
+  100% { opacity: 0; transform: scale(1.05); }
+}
+
+/* Shockwave ring expanding across the screen */
+.shockwaveRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-radius: 50%;
+  border: 4px solid #FFD700;
+  box-shadow:
+    0 0 30px #FF0090,
+    0 0 60px #FFD700,
+    inset 0 0 20px #FF0090;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.shockwaveActive {
+  animation: shockwaveExpand 0.85s cubic-bezier(0.1, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes shockwaveExpand {
+  0% {
+    transform: scale(0.1);
+    opacity: 1;
+    border-width: 8px;
+  }
+  60% {
+    opacity: 0.7;
+    border-width: 3px;
+  }
+  100% {
+    transform: scale(22);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
+/* 3D Flying Rocket Container */
+.flyingRocketWrapper {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+/* Celebratory Title that appears right at the explosion */
+.burstTitle {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  font-family: var(--font-h);
+  font-size: clamp(24px, 6vw, 76px);
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+  white-space: normal;
+  max-width: 90vw;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 20px rgba(255, 0, 144, 0.9),
+    0 0 40px rgba(255, 215, 0, 0.8),
+    0 0 80px rgba(255, 0, 144, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.burstTitleActive {
+  animation: burstTitleAnim 1.4s cubic-bezier(0.2, 0.9, 0.3, 1) forwards;
+}
+
+@keyframes burstTitleAnim {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.4) rotate(-4deg);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.15) rotate(0deg);
+  }
+  45% {
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.15) translateY(-20px);
+  }
+}
+
+.fullScreenCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 800px) {
+  .boyWidget {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: center;
+  }
+  .boyCard {
+    width: 140px;
+    height: 140px;
+  }
+}

@@ -1,0 +1,115 @@
+/* ── WHY PROMISE AUTO HORIZONTAL SLIDESHOW CSS ── */
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 14px;
+  padding: 10px 0 20px;
+  cursor: grab;
+}
+
+.carouselContainer:active {
+  cursor: grabbing;
+}
+
+/* Sliding GPU-accelerated Track */
+.track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  will-change: transform;
+  user-select: none;
+  align-items: center;
+}
+
+/* Feature Card (Slideshow Item) */
+.card {
+  width: 380px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  padding: 34px 26px;
+  background: rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(255, 0, 144, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  transform: scale(0.94);
+  transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.65s ease,
+              border-color 0.65s ease,
+              background 0.65s ease,
+              box-shadow 0.65s ease;
+}
+
+.card:hover {
+  opacity: 0.85;
+  border-color: rgba(255, 0, 144, 0.4);
+}
+
+/* Center Active Card in Slideshow */
+.cardActive {
+  opacity: 1;
+  transform: scale(1.02);
+  border-color: var(--pink);
+  background: rgba(255, 0, 144, 0.09);
+  box-shadow: 0 20px 48px rgba(255, 0, 144, 0.28), 0 0 28px rgba(255, 0, 144, 0.16);
+}
+
+.cardTitle {
+  font-family: var(--font-h);
+  font-size: 21px;
+  font-weight: 850;
+  color: var(--pink);
+  margin-bottom: 14px;
+  line-height: 1.25;
+  text-shadow: 0 0 14px rgba(255, 0, 144, 0.4);
+}
+
+.cardDesc {
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.86);
+  line-height: 1.7;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 900px) {
+  .card {
+    width: 310px;
+    padding: 32px 22px;
+  }
+  .cardTitle {
+    font-size: 19px;
+    margin-bottom: 10px;
+  }
+  .cardDesc {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 600px) {
+  .track {
+    gap: 16px;
+  }
+  .card {
+    width: 80vw;
+    max-width: 300px;
+    padding: 26px 20px;
+  }
+  .cardTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .cardDesc {
+    font-size: 13.5px;
+    line-height: 1.65;
+  }
+}
+
+
