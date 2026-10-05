@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import crypto from 'crypto'
+
 import { supabaseAdmin, isSupabaseConfigured } from '@/lib/supabase'
 import { checkRateLimit, getClientIp } from '@/lib/rateLimit'
 import { LeadSchema } from '@/lib/validations'

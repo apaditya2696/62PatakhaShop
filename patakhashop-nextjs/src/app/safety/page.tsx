@@ -1,16 +1,52 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
+import JsonLd from '@/components/JsonLd'
 import styles from './safety.module.css'
 
 export const metadata: Metadata = {
-  title: 'Safety Guidelines & Rules | 62 Patakha Shop',
+  title: 'Safety Guidelines & Green Cracker Rules | 62 Patakha Shop Jaipur',
   description:
     'Simple fireworks safety tips, green cracker guidelines, safe distances, and responsible celebration advice from 62 Patakha Shop Jaipur.',
+  alternates: {
+    canonical: '/safety',
+  },
+}
+
+const safetyFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'What are green crackers and why are they safer?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Green crackers are certified eco-friendly fireworks developed by CSIR-NEERI that produce 30-35% less particulate matter smoke and contain zero banned toxic chemicals like barium nitrate or heavy metals.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the safe distance for bursting multi-shot sky cakes and rockets?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Rockets and aerial sky shots require a minimum safe distance of 20 to 30 meters (65–100 ft). Large multi-shot cakes (12 to 240 shots) require 35 to 50 meters (100–150 ft) of open space away from trees, buildings, and overhead wires.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What should I do if a firework does not ignite or light up?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Never lean over or attempt to relight a dud firework. Wait at least 15 minutes, keep distance, and submerge the item completely in a bucket of water before disposal.',
+      },
+    },
+  ],
 }
 
 export default function SafetyPage() {
   return (
     <div className={styles.pageWrap}>
+      <JsonLd data={safetyFaqSchema} />
       <header className={styles.header}>
         <div className="editorial-container">
           <span className="eyebrow-pill">Safety Guide</span>
@@ -20,6 +56,7 @@ export default function SafetyPage() {
           </p>
         </div>
       </header>
+
 
       <div className="editorial-container">
         <div className={styles.contentLayout}>

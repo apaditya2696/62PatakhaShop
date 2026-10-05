@@ -2,17 +2,22 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import ArchitectureShowcase from '@/components/ArchitectureShowcase'
+import JsonLd, { shopLocalBusinessSchema } from '@/components/JsonLd'
 import styles from './about.module.css'
 
 export const metadata: Metadata = {
   title: 'About Us | 62 Patakha Shop Jaipur',
   description:
     'Since 1964, providing genuine Sivakasi fireworks at Hawa Mahal Bazar, Jaipur. Over 60 years of trust, quality, and celebrations.',
+  alternates: {
+    canonical: '/about',
+  },
 }
 
 export default function AboutPage() {
   return (
     <div className={styles.pageWrap}>
+      <JsonLd data={shopLocalBusinessSchema} />
       <header className={styles.header}>
         <div className="editorial-container">
           <span className="eyebrow-pill">Our Story</span>
@@ -22,6 +27,7 @@ export default function AboutPage() {
           </p>
         </div>
       </header>
+
 
       <div className="editorial-container">
         {/* Heritage Story Section */}

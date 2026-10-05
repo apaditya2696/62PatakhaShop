@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${cat.label} (${cat.hindiName}) Online | 62 Patakha Shop Jaipur`,
+    title: `${cat.label} Online | 62 Patakha Shop Jaipur`,
     description: `Buy genuine ${cat.label} at wholesale prices from 62 Patakha Shop Jaipur. 100% Sivakasi authentic crackers with instant WhatsApp ordering.`,
   }
 }
@@ -58,7 +58,7 @@ export default async function CategoryPage({ params }: PageProps) {
       defaultCategory={cat.id}
       categoryInfo={cat}
       isCategoryPage={true}
-      pageTitle={`${cat.label} (${cat.hindiName})`}
+      pageTitle={cat.label}
     />
   )
 }

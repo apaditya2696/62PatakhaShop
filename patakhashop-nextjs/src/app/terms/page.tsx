@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Terms & Conditions | 62 Patakha Shop Jaipur',
   description:
     'Terms and conditions of sale, store pickup policies, safety compliance, and guidelines for 62 Patakha Shop, Jaipur.',
+  alternates: {
+    canonical: '/terms',
+  },
 }
 
 export default function TermsPage() {

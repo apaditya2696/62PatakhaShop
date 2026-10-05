@@ -42,6 +42,7 @@ export default function ImageReveal({
             src={src}
             alt={alt}
             fill
+            quality={95}
             sizes={sizes || '(max-width: 768px) 100vw, 50vw'}
             priority={priority}
             className={styles.image}
@@ -52,7 +53,8 @@ export default function ImageReveal({
             src={src}
             alt={alt}
             width={width || 600}
-            height={height || 750}
+            height={height || 600}
+            quality={95}
             priority={priority}
             className={styles.image}
             onLoad={() => setIsLoaded(true)}

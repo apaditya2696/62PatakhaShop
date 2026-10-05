@@ -378,7 +378,7 @@ export default function CartDrawer() {
                 <label className={styles.fieldLabel}>Your Full Name *</label>
                 <input
                   type="text"
-                  placeholder="e.g. Rahul Sharma / राहुल शर्मा"
+                  placeholder="e.g. Rahul Sharma"
                   value={customerName}
                   onChange={e => setCustomerName(e.target.value)}
                   className={styles.modalInput}

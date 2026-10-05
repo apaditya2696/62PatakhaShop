@@ -21,59 +21,26 @@ export interface Product {
   image: string
 }
 
-const CATEGORY_ALIASES: Record<string, string[]> = {
-  all: ['all'],
-  rockets: ['rocket', 'rockets', 'sky rocket'],
-  flowerpots: ['flower pot', 'flowerpot', 'flowerpots', 'anar', 'fountains', 'fountain'],
-  torches: ['torches', 'torch', 'candle', 'candles', 'roman candle'],
-  sparklers: ['sparkler', 'sparklers', 'phuljhadi'],
-  'aerial cakes': ['shot', 'shots', 'cake', 'cakes', 'aerial', 'multi-shot', 'salute'],
-  crackers: ['cracker', 'crackers', 'lar', 'chorsa'],
-  skyshots: ['sky shots', 'skyshots', 'shell', 'salute', 'shot'],
-  chakkar: ['chakkar', 'ground chakkar', 'spinner'],
-  bombs: ['bomb', 'bombs', 'crackers bomb', 'sound bomb', 'hydro', 'atom'],
-  'kids special': [
-    'kids special',
-    'novelties',
-    'novelty',
-    'toy gun',
-    'gun',
-    'magic',
-    'pops',
-    'snapper',
-    'kids',
-    'family',
-    'toy',
-    'pop pop',
-    'snake',
-    'whistle',
-    'pencil',
-    'cartoon'
-  ],
-}
-
 function matchesCategory(product: Product, catId: string): boolean {
   if (!catId || catId === 'all') return true
-  const normalizedCatId = catId.toLowerCase().trim()
-  const aliases = CATEGORY_ALIASES[normalizedCatId] || [normalizedCatId]
-  const prodCat = (product.category || '').toLowerCase().trim()
-  const text = `${product.name} ${prodCat} ${product.tags || ''}`.toLowerCase()
+  const normalizedCatId = catId.toLowerCase().trim().replace(/-/g, ' ')
+  const prodCat = (product.category || '').toLowerCase().trim().replace(/-/g, ' ')
 
-  // 1. Direct match with alias array
-  if (aliases.some((alias) => text.includes(alias))) return true
-
-  // 2. Direct match with product.category
-  if (prodCat && (prodCat === normalizedCatId || prodCat.replace(/\s+/g, '') === normalizedCatId.replace(/\s+/g, ''))) {
-    return true
+  const normalize = (cat: string) => {
+    if (cat === 'aerial cakes' || cat === 'aerial-cakes' || cat === 'multishot cakes') return 'aerial cakes'
+    if (cat === 'skyshots' || cat === 'sky shots' || cat === 'shells') return 'skyshots'
+    if (cat === 'flowerpots' || cat === 'flower pots' || cat === 'flower pot' || cat === 'anars') return 'flowerpots'
+    if (cat === 'crackers' || cat === 'sound crackers' || cat === 'lar') return 'crackers'
+    if (cat === 'bombs' || cat === 'bomb') return 'bombs'
+    if (cat === 'sparklers' || cat === 'sparkler' || cat === 'phuljhadi') return 'sparklers'
+    if (cat === 'chakkar' || cat === 'chakkars' || cat === 'spinners') return 'chakkar'
+    if (cat === 'torches' || cat === 'torch' || cat === 'candles') return 'torches'
+    if (cat === 'rockets' || cat === 'rocket') return 'rockets'
+    if (cat === 'kids special' || cat === 'kids-special' || cat === 'kids' || cat === 'family-friendly') return 'kids special'
+    return cat
   }
 
-  // 3. Fallback: if catId has comma separated or multi-words, check if any token matches
-  const tokens = normalizedCatId.split(/[,&/]+|\s{2,}/).map(t => t.trim()).filter(Boolean)
-  if (tokens.length > 1 && tokens.some(t => t.length > 2 && text.includes(t))) {
-    return true
-  }
-
-  return false
+  return normalize(prodCat) === normalize(normalizedCatId)
 }
 
 function matchesSize(productName: string, size: string): boolean {

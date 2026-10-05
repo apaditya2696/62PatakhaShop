@@ -33,10 +33,10 @@ function StatusSelect({
 
   const isHi = lang === 'hi'
   const STATUS_OPTIONS = [
-    { value: 'pending', label: isHi ? 'लंबित (पेंडिंग)' : 'Pending', colorClass: styles.status_pending },
-    { value: 'confirmed', label: isHi ? 'भुगतान प्राप्त (कन्फर्म)' : 'Confirmed & Paid', colorClass: styles.status_confirmed },
-    { value: 'delivered', label: isHi ? 'डिलीवर हो गया' : 'Delivered', colorClass: styles.status_delivered },
-    { value: 'cancelled', label: isHi ? 'रद्द कर दिया' : 'Cancelled', colorClass: styles.status_cancelled },
+    { value: 'pending', label: 'Pending', colorClass: styles.status_pending },
+    { value: 'confirmed', label: 'Confirmed & Paid', colorClass: styles.status_confirmed },
+    { value: 'delivered', label: 'Delivered', colorClass: styles.status_delivered },
+    { value: 'cancelled', label: 'Cancelled', colorClass: styles.status_cancelled },
   ]
 
   const currentOption = STATUS_OPTIONS.find((o) => o.value === status) || STATUS_OPTIONS[0]
@@ -85,7 +85,7 @@ function StatusSelect({
       )}
     </div>
   )
-}// ── i18n Bilingual Dictionary (English / Hindi हिंदी) ──
+}// ── i18n Dictionary (English) ──
 const ADMIN_I18N = {
   en: {
     portalTitle: 'Admin Portal',
@@ -122,7 +122,7 @@ const ADMIN_I18N = {
     createCounterTitle: '⚡ Create Counter / Walk-in Order',
     createCounterSub: 'Create instant bill for phone, WhatsApp, or in-store walk-in customers.',
     custNameLabel: 'Customer Name',
-    custNameHolder: 'e.g. Ramesh Sharma / रमेश शर्मा',
+    custNameHolder: 'e.g. Ramesh Sharma',
     custPhoneLabel: 'Mobile Number (WhatsApp)',
     custPhoneHolder: 'e.g. 9829012345',
     orderNoteLabel: 'Order Note / Pickup Instructions',
@@ -151,67 +151,67 @@ const ADMIN_I18N = {
     cancelled: 'Cancelled',
   },
   hi: {
-    portalTitle: 'एडमिन पोर्टल (बिलिंग)',
-    live: 'लाइव',
-    subTitle: 'हवा महल बाजार, जयपुर • पटाखा स्टॉक एवं ऑर्डर कंट्रोल',
-    viewStore: 'दुकान देखें',
-    addProduct: '＋ नया पटाखा जोड़ें',
-    printReport: 'स्टॉक रिपोर्ट प्रिंट करें',
-    newCounterOrder: '⚡ नया बिल बनाएं',
-    logout: 'लॉगआउट',
-    tabInventory: 'पटाखा स्टॉक',
-    tabOrders: 'ग्राहक ऑर्डर लिस्ट',
-    tabEnquiries: 'पूछताछ',
-    totalProducts: 'कुल पटाखे (वैरायटी)',
-    inStock: 'उपलब्ध (स्टॉक में)',
-    outOfStock: 'खत्म (आउट ऑफ स्टॉक)',
-    lowStock: 'कम स्टॉक (<10 नग)',
-    stockValuation: 'कुल स्टॉक वैल्यू',
-    searchPlaceholder: 'नाम, ब्रांड या कैटेगरी से पटाखा खोजें...',
-    allBrands: 'सभी ब्रांड्स',
-    allCategories: 'सभी श्रेणियां (कैटेगरी)',
-    allStatus: 'सभी स्थिति',
-    sno: 'क्र.सं.',
-    productName: 'पटाखे का नाम',
-    category: 'श्रेणी (कैटेगरी)',
-    price: 'बिक्री रेट (₹)',
-    mrp: 'मूल MRP (₹)',
-    stockQty: 'स्टॉक मात्रा (नग)',
-    status: 'स्थिति (स्टेटस)',
-    actions: 'कार्रवाई (एक्शन)',
-    edit: 'बदलाव करें (एडिट)',
-    quick: 'त्वरित अपडेट',
-    delete: 'हटाएं',
-    createCounterTitle: '⚡ काउंटर / वॉक-इन ग्राहक बिल बनाएं',
-    createCounterSub: 'फोन, व्हाट्सएप या दुकान पर आए ग्राहकों का तुरंत बिल बनाएं।',
-    custNameLabel: 'ग्राहक का नाम',
-    custNameHolder: 'उदाहरण: रमेश शर्मा / Ramesh Sharma',
-    custPhoneLabel: 'मोबाइल नंबर (व्हाट्सएप)',
-    custPhoneHolder: 'उदा: 9829012345',
-    orderNoteLabel: 'ऑर्डर नोट / निर्देश',
-    orderNoteHolder: 'उदा: नकद भुगतान / काउंटर पिकअप',
-    searchProductLabel: '+ पटाखा खोजें और बिल में जोड़ें',
-    generateBillBtn: '⚡ बिल बनाएं और रसीद प्रिंट करें',
-    creatingBill: 'बिल बन रहा है...',
-    cancelBtn: 'रद्द करें',
-    itemHeader: 'पटाखा नाम',
-    qtyHeader: 'मात्रा',
-    rateHeader: 'दर (रेट)',
-    totalHeader: 'कुल',
-    totalItems: 'कुल पटाखे (नग):',
-    grandTotal: 'कुल राशि:',
-    noItemsYet: 'अभी कोई पटाखा नहीं जोड़ा गया है। ऊपर खोजें और जोड़ें।',
-    orderId: 'ऑर्डर नंबर',
-    customer: 'ग्राहक विवरण',
-    items: 'पटाखे (सामान)',
-    amount: 'कुल राशि',
-    date: 'दिनांक व समय',
-    printReceipt: 'रसीद प्रिंट करें',
-    downloadCsv: 'CSV डाउनलोड करें',
-    pending: 'लंबित (पेंडिंग)',
-    confirmed: 'भुगतान प्राप्त (कन्फर्म)',
-    delivered: 'डिलीवर हो गया',
-    cancelled: 'रद्द कर दिया',
+    portalTitle: 'Admin Portal',
+    live: 'Live',
+    subTitle: 'Hawa Mahal Bazar, Jaipur • Central Inventory & Orders',
+    viewStore: 'View Store',
+    addProduct: '＋ Add Product',
+    printReport: 'Print Stock Report',
+    newCounterOrder: '⚡ New Bill',
+    logout: 'Logout',
+    tabInventory: 'Inventory',
+    tabOrders: 'Orders',
+    tabEnquiries: 'Enquiries',
+    totalProducts: 'Total Products',
+    inStock: 'In Stock',
+    outOfStock: 'Out of Stock',
+    lowStock: 'Low Stock (<10)',
+    stockValuation: 'Total Stock Value',
+    searchPlaceholder: 'Search products by name, brand, or category...',
+    allBrands: 'All Brands',
+    allCategories: 'All Categories',
+    allStatus: 'All Status',
+    sno: 'S.No.',
+    productName: 'Product Name',
+    category: 'Category',
+    price: 'Sale Price (₹)',
+    mrp: 'Original MRP (₹)',
+    stockQty: 'Stock Quantity',
+    status: 'Status',
+    actions: 'Actions',
+    edit: 'Edit Product',
+    quick: 'Quick Edit',
+    delete: 'Delete',
+    createCounterTitle: '⚡ Create Counter / Walk-in Order',
+    createCounterSub: 'Create instant bill for phone, WhatsApp, or in-store walk-in customers.',
+    custNameLabel: 'Customer Name',
+    custNameHolder: 'e.g. Ramesh Sharma',
+    custPhoneLabel: 'Mobile Number (WhatsApp)',
+    custPhoneHolder: 'e.g. 9829012345',
+    orderNoteLabel: 'Order Note / Instructions',
+    orderNoteHolder: 'e.g. Cash Payment / Counter Pickup',
+    searchProductLabel: '+ Search & Add Firework Product',
+    generateBillBtn: '⚡ Generate Order & Print Receipt',
+    creatingBill: 'Creating Bill...',
+    cancelBtn: 'Cancel',
+    itemHeader: 'Product Name',
+    qtyHeader: 'Quantity',
+    rateHeader: 'Rate (₹)',
+    totalHeader: 'Total',
+    totalItems: 'Total Items:',
+    grandTotal: 'Grand Total:',
+    noItemsYet: 'No items added yet. Search a product above to start billing.',
+    orderId: 'Order ID',
+    customer: 'Customer Details',
+    items: 'Ordered Items',
+    amount: 'Total Amount',
+    date: 'Date & Time',
+    printReceipt: 'Print Receipt',
+    downloadCsv: 'Export CSV',
+    pending: 'Pending',
+    confirmed: 'Confirmed & Paid',
+    delivered: 'Delivered',
+    cancelled: 'Cancelled',
   },
 }
 
@@ -478,10 +478,10 @@ export default function AdminClient() {
   }) => {
     setConfirmModal({
       isOpen: true,
-      title: options.title || (lang === 'hi' ? 'पुष्टि करें' : 'Confirm Action'),
+      title: options.title || 'Confirm Action',
       message: options.message,
-      confirmText: options.confirmText || (lang === 'hi' ? 'हां, जारी रखें' : 'Yes, Confirm'),
-      cancelText: options.cancelText || (lang === 'hi' ? 'रद्द करें' : 'Cancel'),
+      confirmText: options.confirmText || 'Yes, Confirm',
+      cancelText: options.cancelText || 'Cancel',
       variant: options.variant || 'danger',
       onConfirm: options.onConfirm,
     })
@@ -543,23 +543,19 @@ export default function AdminClient() {
   const [leads, setLeads] = useState<Lead[]>([])
   const [leadSearch, setLeadSearch] = useState('')
 
-  // Bilingual Language State (English / Hindi हिंदी)
-  const [lang, setLang] = useState<'en' | 'hi'>('hi')
+  // Language State (English)
+  const [lang, setLang] = useState<'en' | 'hi'>('en')
 
   useEffect(() => {
     try {
-      const savedLang = localStorage.getItem('62_admin_lang') as 'en' | 'hi'
-      if (savedLang === 'en' || savedLang === 'hi') {
-        setLang(savedLang)
-      }
+      localStorage.setItem('62_admin_lang', 'en')
     } catch { }
   }, [])
 
   const toggleLang = () => {
-    const nextLang = lang === 'en' ? 'hi' : 'en'
-    setLang(nextLang)
+    setLang('en')
     try {
-      localStorage.setItem('62_admin_lang', nextLang)
+      localStorage.setItem('62_admin_lang', 'en')
     } catch { }
   }
 
@@ -752,12 +748,10 @@ export default function AdminClient() {
 
   const handleLogout = () => {
     requestConfirm({
-      title: lang === 'hi' ? '🚪 एडमिन लॉगआउट' : '🚪 Logout Confirmation',
-      message: lang === 'hi'
-        ? 'क्या आप एडमिन पोर्टल से लॉगआउट करना चाहते हैं? आपकी वर्तमान सेशन समाप्त हो जाएगी।'
-        : 'Are you sure you want to log out of the Admin Portal? Your current session will end.',
-      confirmText: lang === 'hi' ? 'हां, लॉगआउट करें' : 'Yes, Logout',
-      cancelText: lang === 'hi' ? 'रद्द करें' : 'Cancel',
+      title: '🚪 Logout Confirmation',
+      message: 'Are you sure you want to log out of the Admin Portal? Your current session will end.',
+      confirmText: 'Yes, Logout',
+      cancelText: 'Cancel',
       variant: 'danger',
       onConfirm: () => {
         try {
@@ -852,12 +846,10 @@ export default function AdminClient() {
     if (p.inStock && (p.stockQuantity ?? 50) > 10) {
       const qty = p.stockQuantity ?? 50
       requestConfirm({
-        title: lang === 'hi' ? '⚠️ आउट ऑफ स्टॉक की पुष्टि' : '⚠️ Mark Out of Stock',
-        message: lang === 'hi'
-          ? `"${p.name}" में अभी ${qty} नग स्टॉक उपलब्ध है। क्या आप सचमुच इसे Out of Stock मार्क करना चाहते हैं?`
-          : `"${p.name}" currently has ${qty} pcs in stock. Are you sure you want to mark it Out of Stock?`,
-        confirmText: lang === 'hi' ? 'हां, Out of Stock मार्क करें' : 'Yes, Mark Out of Stock',
-        cancelText: lang === 'hi' ? 'रद्द करें' : 'Cancel',
+        title: '⚠️ Mark Out of Stock',
+        message: `"${p.name}" currently has ${qty} pcs in stock. Are you sure you want to mark it Out of Stock?`,
+        confirmText: 'Yes, Mark Out of Stock',
+        cancelText: 'Cancel',
         variant: 'danger',
         onConfirm: () => executeToggleStock(p),
       })
@@ -1219,12 +1211,10 @@ export default function AdminClient() {
   // ── Generate Printable Stock Report ───────────────────
   const generatePrintReport = () => {
     requestConfirm({
-      title: lang === 'hi' ? '🖨️ स्टॉक रिपोर्ट प्रिंट' : '🖨️ Print Stock Report',
-      message: lang === 'hi'
-        ? 'क्या आप पूरी स्टॉक वैल्यूएशन रिपोर्ट तैयार करके प्रिंट करना चाहते हैं?'
-        : 'Are you sure you want to generate and print the full inventory stock report?',
-      confirmText: lang === 'hi' ? 'हां, प्रिंट करें' : 'Yes, Print Report',
-      cancelText: lang === 'hi' ? 'रद्द करें' : 'Cancel',
+      title: '🖨️ Print Stock Report',
+      message: 'Are you sure you want to generate and print the full inventory stock report?',
+      confirmText: 'Yes, Print Report',
+      cancelText: 'Cancel',
       variant: 'warning',
       onConfirm: () => executePrintReport(),
     })
@@ -2095,8 +2085,6 @@ export default function AdminClient() {
               {loading ? 'Verifying...' : 'Access Dashboard'}
             </button>
           </form>
-
-          <p className={styles.hint}>Default key: <code>patakha62admin</code></p>
         </div>
       </div>
     )
@@ -2135,7 +2123,7 @@ export default function AdminClient() {
                 whiteSpace: 'nowrap'
               }}
             >
-              ↩ {lang === 'hi' ? 'पूर्ववत (Undo)' : 'Undo'}
+              ↩ Undo
             </button>
           )}
         </div>
@@ -2898,7 +2886,7 @@ export default function AdminClient() {
                 <div style={{ position: 'relative', width: '100%' }}>
                   <input
                     type="text"
-                    placeholder={lang === 'hi' ? 'ऑर्डर नंबर, नाम या फोन से खोजें...' : 'Search order ID, name, or phone...'}
+                    placeholder="Search order ID, name, or phone..."
                     value={orderSearch}
                     onChange={e => setOrderSearch(e.target.value)}
                     className={styles.dashSearch}
@@ -2936,7 +2924,7 @@ export default function AdminClient() {
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '5px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                     <span style={{ fontSize: '11px', color: 'var(--adm-muted)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                      {lang === 'hi' ? 'ऑर्डर स्थिति (Status)' : 'ORDER STATUS'}
+                      ORDER STATUS
                     </span>
                     {orderStatusFilter !== 'all' && (
                       <button
@@ -2944,7 +2932,7 @@ export default function AdminClient() {
                         onClick={() => setOrderStatusFilter('all')}
                         style={{ fontSize: '11px', color: 'var(--adm-gold)', background: 'none', border: 'none', cursor: 'pointer', fontWeight: 600 }}
                       >
-                        {lang === 'hi' ? 'रीसेट' : 'Clear Filter'}
+                        Clear Filter
                       </button>
                     )}
                   </div>
@@ -2968,14 +2956,14 @@ export default function AdminClient() {
                               : orders.filter(o => o.status === 'cancelled').length
 
                       const label = st === 'all'
-                        ? (lang === 'hi' ? 'सभी' : 'All')
+                        ? 'All'
                         : st === 'pending'
-                          ? (lang === 'hi' ? 'पेंडिंग' : 'Pending')
+                          ? 'Pending'
                           : st === 'confirmed'
-                            ? (lang === 'hi' ? 'कन्फर्म' : 'Confirmed')
+                            ? 'Confirmed'
                             : st === 'delivered'
-                              ? (lang === 'hi' ? 'डिलीवर्ड' : 'Delivered')
-                              : (lang === 'hi' ? 'रद्द' : 'Cancelled')
+                              ? 'Delivered'
+                              : 'Cancelled'
 
                       const isAct = orderStatusFilter === st
                       return (
@@ -3008,7 +2996,7 @@ export default function AdminClient() {
                 {/* Filter Pill Track 2: Receipt Print Status (Equal 3-Column Grid) */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '5px', paddingTop: '4px', borderTop: '1px solid var(--adm-border)' }}>
                   <span style={{ fontSize: '11px', color: 'var(--adm-muted)', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                    {lang === 'hi' ? 'रसीद स्थिति (Receipts)' : 'RECEIPT STATUS'}
+                    RECEIPT STATUS
                   </span>
 
                   <div style={{
@@ -3948,9 +3936,9 @@ export default function AdminClient() {
                     <label>Customer Name</label>
                     <input
                       type="text"
-                      placeholder="e.g. Ramesh Sharma / रमेश शर्मा"
+                      placeholder="e.g. Ramesh Sharma"
                       value={newOrderCustName}
-                      onChange={e => setNewOrderCustName(e.target.value.replace(/[^\w\s\u0900-\u097F]/g, ''))}
+                      onChange={e => setNewOrderCustName(e.target.value.replace(/[^\w\s]/g, ''))}
                       required
                     />
                   </div>
@@ -4177,10 +4165,10 @@ function WalkinProductPicker({
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
         <label style={{ fontSize: '12px', fontWeight: 700, color: 'var(--adm-text)', margin: 0 }}>
-          {isHi ? '+ पटाखा खोजें और बिल में जोड़ें' : '+ Search & Add Firework Product'}
+          + Search & Add Firework Product
         </label>
         <span style={{ fontSize: '11px', color: 'var(--adm-muted)', fontWeight: 600 }}>
-          {filtered.length} {isHi ? 'पटाखे उपलब्ध' : `product${filtered.length !== 1 ? 's' : ''} available`}
+          {filtered.length} product{filtered.length !== 1 ? 's' : ''} available
         </span>
       </div>
 
@@ -4188,7 +4176,7 @@ function WalkinProductPicker({
         <input
           ref={inputRef}
           type="text"
-          placeholder={isHi ? '🔍 पटाखा नाम या ब्रांड लिखकर खोजें...' : '🔍 Type product name or brand to search...'}
+          placeholder="🔍 Type product name or brand to search..."
           value={query}
           onChange={e => { setQuery(e.target.value); setOpen(true) }}
           onFocus={() => setOpen(true)}

@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | 62 Patakha Shop Jaipur',
   description:
     'Learn how 62 Patakha Shop collects, uses, and safeguards your personal data, order details, and WhatsApp communication preferences.',
+  alternates: {
+    canonical: '/privacy',
+  },
 }
 
 export default function PrivacyPage() {

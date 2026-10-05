@@ -12,7 +12,7 @@ This Next.js application is built with **hybrid database sync**:
 2. Create a new project (e.g. `62-patakha-shop`).
 3. In the left sidebar, click **SQL Editor** -> **New query**.
 4. Open the SQL file provided in this repository:
-   - [supabase_schema.sql](file:///c:/Users/naman/Downloads/62PatakhaShop-main/patakhashop-nextjs/supabase_schema.sql)
+   - [schema.sql](file:///c:/phatka%20shop/patakhashop-nextjs/supabase/schema.sql)
 5. Paste the entire SQL content into the Supabase query editor and click **Run**.
    - This creates the `products`, `orders`, and `leads` tables, plus the `product-images` storage bucket.
 
@@ -22,7 +22,7 @@ This Next.js application is built with **hybrid database sync**:
 
 1. In Supabase **SQL Editor**, click **New query**.
 2. Open the seed file provided in this repository:
-   - [supabase_seed_products.sql](file:///c:/Users/naman/Downloads/62PatakhaShop-main/patakhashop-nextjs/supabase_seed_products.sql)
+   - [seed_products.sql](file:///c:/phatka%20shop/patakhashop-nextjs/supabase/seed_products.sql)
 3. Paste the content and click **Run**.
    - This will populate all 208 products with their initial prices, brands, categories, and image links into your Supabase database.
 

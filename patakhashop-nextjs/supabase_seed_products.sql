@@ -1,7 +1,7 @@
 -- 62 Patakha Shop - Supabase Products Seed (Clean Authentic Sivakasi Firecrackers)
 -- Total Products: 200
 
-INSERT INTO products (id, name, brand, category, original_price, discount_price, image, in_stock, stock_quantity, tags)
+INSERT INTO products (id, name, brand, category, original_price, price, image, in_stock, stock_quantity, tags)
 VALUES
   ('22846', '@Night', 'Vanitha', 'kids special, novelties, torches', 0, 0, '/products/prod_1_22846.jpg', FALSE, 50, ARRAY['kids special', 'novelties', 'torches']),
   ('22720', '1 Star (1k Lar)', 'Standard / Sivakasi', 'lar', 0, 0, '/products/prod_2_22720.jpg', FALSE, 50, ARRAY['Lar']),
@@ -208,7 +208,7 @@ ON CONFLICT (id) DO UPDATE SET
   brand = EXCLUDED.brand,
   category = EXCLUDED.category,
   original_price = EXCLUDED.original_price,
-  discount_price = EXCLUDED.discount_price,
+  price = EXCLUDED.price,
   image = EXCLUDED.image,
   in_stock = EXCLUDED.in_stock,
   stock_quantity = EXCLUDED.stock_quantity,

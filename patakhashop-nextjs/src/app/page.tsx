@@ -5,6 +5,7 @@ import PopularCategoriesRail from '@/components/PopularCategoriesRail'
 import ShowroomGallerySection from '@/components/ShowroomGallerySection'
 import CollectionRail from '@/components/CollectionRail'
 import ComplianceSection from '@/components/ComplianceSection'
+import JsonLd, { shopLocalBusinessSchema } from '@/components/JsonLd'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './page.module.css'
@@ -12,12 +13,17 @@ import styles from './page.module.css'
 export const metadata: Metadata = {
   title: '62 Patakha Shop – Best Fireworks & Crackers Shop in Jaipur | Sivakasi Crackers',
   description:
-    'Buy best quality fireworks and crackers in Jaipur for Diwali, weddings, and parties. 100% original Sivakasi products at best prices since 1964.',
+    'Buy best quality fireworks and crackers in Jaipur for Diwali, weddings, and parties. 100% original Sivakasi green crackers at best prices since 1964.',
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function HomePage() {
   return (
     <div className={styles.pageWrap}>
+      <JsonLd data={shopLocalBusinessSchema} />
+
       {/* 1. Full-Bleed Hero with Parallax & Warm Transition */}
       <HeroParallax />
 
@@ -37,7 +43,7 @@ export default function HomePage() {
         <div className={styles.bannerImageWrap}>
           <Image
             src="/shop-front-2.jpg"
-            alt="62 Patakha Shop – Hawa Mahal Bazar, Jaipur"
+            alt="62 Patakha Shop Flagship Entrance – Hawa Mahal Bazar, Jaipur"
             fill
             className={styles.bannerImg}
           />
@@ -67,3 +73,4 @@ export default function HomePage() {
     </div>
   )
 }
+

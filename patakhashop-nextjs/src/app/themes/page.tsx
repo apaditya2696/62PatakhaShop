@@ -1,8 +1,13 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export const metadata = {
-  title: 'Hawa Mahal Theme Concepts – 62 Patakha Shop',
+export const metadata: Metadata = {
+  title: 'Hawa Mahal Heritage Theme Concepts | 62 Patakha Shop Jaipur',
+  description: 'Explore visual design concepts for 62 Patakha Shop Jaipur.',
+  alternates: {
+    canonical: '/themes',
+  },
 }
 
 export default function ThemesPage() {

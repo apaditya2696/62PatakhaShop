@@ -113,10 +113,12 @@ const ProductCard = React.memo(function ProductCard({
 
         <div className={styles.footerRow}>
           <div className={styles.pricing}>
-            <span className={styles.currentPrice}>₹{price.toLocaleString('en-IN')}</span>
-            {originalPrice && originalPrice > price && (
+            <span className={styles.currentPrice}>
+              {price > 0 ? `₹${price.toLocaleString('en-IN')}` : 'Price Pending'}
+            </span>
+            {originalPrice && originalPrice > price ? (
               <span className={styles.originalPrice}>₹{originalPrice.toLocaleString('en-IN')}</span>
-            )}
+            ) : null}
           </div>
 
           <div className={styles.actions}>
